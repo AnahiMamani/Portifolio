@@ -1,0 +1,96 @@
+/* TIRANDO CONFIGURAÇÕES PADRAO */
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p{
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* FIM CONFIGURAÇÕES PADRAO */
+
+/* HEADER */
+header {
+    background-color: #F6EEE1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+nav a {
+    margin-right: 20px;
+}
+
+/* aqui estou dizendo que o ultimo elemento do nav tera a marginright zerada, em vez de 20px */
+nav a:last-child {
+    margin-right: 0;
+}
+/* FIM HEADER */
+
+/* FOOTER */
+footer{
+    background-color: #334B35;
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content: center;
+    padding: 6%;
+}
+footer a{
+    color: white;
+}
+.footer-div{
+    margin-bottom: 5px;
+    display: flex;
+    color: gray;
+    /* so aplica no copy... */
+}
+/* se eu ativar isso o bottom do icon fica zerado :P */
+/* footer div:last-child {
+    margin-bottom: 0;
+} */
+
+.icon{
+    font-size: 25px;
+    color: white;
+    background-color: #FDAD16
+    ;
+    height: 50px; /* Ajustei a altura e largura para 40px para criar um círculo */
+    width: 50px;
+    border-radius: 50%; /* Adicionei o border-radius para criar a forma circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px 40px; /* Ajustei a margem para centralizar os ícones */
+}
+/* FIM FOOTER */
+
+/* SECTION PERFIL */
+
+.perfil{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FDAD16;
+    height: 35rem;
+    padding: 5%;
+}
+
+.perfil h1{
+    font-size: 70px;
+}
+
+#quadrado{
+    background-color: #334B35;
+    height: 35rem;
+    width: 25rem;
+}
