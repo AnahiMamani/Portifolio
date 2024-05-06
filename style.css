@@ -1,5 +1,6 @@
 /* TIRANDO CONFIGURAÇÕES PADRAO */
 body {
+    font-size: 16px;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -80,20 +81,24 @@ footer a {
 .perfil-div {
     background-color: aqua;
     width: 50%; /* Cada div da seção ocupará 50% do tamanho da seção */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .perfil h1 {
     font-size: 4rem; /* Reduzi o tamanho da fonte para que caiba em dispositivos móveis */
+    font-size: min(60px,6vw);
 }
 
 .perfil p {
     margin-top: 20px; /* Adicionei margem superior para separar o parágrafo */
+    font-size: min(19px,5vw);
 }
 
 .botaol{
     background-color: #334B35;
     border-radius: 10px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,10 +109,12 @@ footer a {
     margin-right: 10%;
 }
 #quadrado {
-    background-color: #334B35;
-    height: 200px; /* Defini uma altura fixa para o quadrado */
-    width: 200px; /* Defini uma largura fixa para o quadrado */
-    margin-top: 20px; /* Adicionei margem superior para separar do conteúdo anterior */
+    background-color: #a7c9aa;
+    height: 113%; /* Defini uma altura fixa para o quadrado */
+    width: 54%; /* Defini uma largura fixa para o quadrado */
+    margin-top: 21%; /* Adicionei margem superior para separar do conteúdo anterior */
+    display: flex;
+    text-align: center;
 }
 
 /* Estilos para dispositivos com largura máxima de 600px (dispositivos móveis) */
@@ -115,12 +122,12 @@ footer a {
     .perfil {
         flex-direction: column; /* Alterado para coluna para que os divs fiquem um abaixo do outro */
     }
-    .perfil div {
+    .perfil-div {
         width: 100%; /* Nas telas menores, cada div ocupará 100% do tamanho da seção */
     }
-    #quadrado {
-        margin-top: 20px; /* Adicionei margem superior para separar do conteúdo anterior */
-    }
+    /* #quadrado {
+        margin-top: 21%; /* Adicionei margem superior para separar do conteúdo anterior
+    } */
 }
 
 /* SECTION EDUCA */
@@ -132,5 +139,5 @@ footer a {
 /* FIM SECTION EDUCA */
 
 .se{
-    padding: 0 20%;
+    padding: 0 6%;
 }
