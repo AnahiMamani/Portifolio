@@ -1,17 +1,20 @@
 /* TIRANDO CONFIGURAÇÕES PADRAO */
-body{
+body {
     height: 100%;
     margin: 0;
     padding: 0;
-    margin: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 p{
-    margin:0;
+    margin: 0;
 }
 
-a{
+h1{
+    margin: 0;
+}
+
+a {
     text-decoration: none;
     color: black;
 }
@@ -38,34 +41,27 @@ nav a:last-child {
 /* FIM HEADER */
 
 /* FOOTER */
-footer{
-    background-color: #334B35;
+footer {
+    background-color: #ac9268;
     display: flex;
-    align-items:center;
-    flex-direction:column;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
     padding: 6%;
 }
-footer a{
+footer a {
     color: white;
 }
-.footer-div{
+.footer-div {
     margin-bottom: 5px;
     display: flex;
     color: gray;
-    /* so aplica no copy... */
 }
-/* se eu ativar isso o bottom do icon fica zerado :P */
-/* footer div:last-child {
-    margin-bottom: 0;
-} */
-
-.icon{
+.icon {
     font-size: 25px;
     color: white;
-    background-color: #FDAD16
-    ;
-    height: 50px; /* Ajustei a altura e largura para 40px para criar um círculo */
+    background-color: #FDAD16;
+    height: 50px; /* Ajustei a altura e largura para 50px para manter o tamanho do ícone */
     width: 50px;
     border-radius: 50%; /* Adicionei o border-radius para criar a forma circular */
     display: flex;
@@ -76,21 +72,65 @@ footer a{
 /* FIM FOOTER */
 
 /* SECTION PERFIL */
-
-.perfil{
+.perfil {
     display: flex;
-    justify-content: space-between;
     background-color: #FDAD16;
-    height: 35rem;
+    padding: 3% 8% ;
+}
+.perfil-div {
+    background-color: aqua;
+    width: 50%; /* Cada div da seção ocupará 50% do tamanho da seção */
+}
+
+.perfil h1 {
+    font-size: 4rem; /* Reduzi o tamanho da fonte para que caiba em dispositivos móveis */
+}
+
+.perfil p {
+    margin-top: 20px; /* Adicionei margem superior para separar o parágrafo */
+}
+
+.botaol{
+    background-color: #334B35;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    color: white;
+}
+.botao1-div{
+    margin-right: 10%;
+}
+#quadrado {
+    background-color: #334B35;
+    height: 200px; /* Defini uma altura fixa para o quadrado */
+    width: 200px; /* Defini uma largura fixa para o quadrado */
+    margin-top: 20px; /* Adicionei margem superior para separar do conteúdo anterior */
+}
+
+/* Estilos para dispositivos com largura máxima de 600px (dispositivos móveis) */
+@media only screen and (max-width: 600px) {
+    .perfil {
+        flex-direction: column; /* Alterado para coluna para que os divs fiquem um abaixo do outro */
+    }
+    .perfil div {
+        width: 100%; /* Nas telas menores, cada div ocupará 100% do tamanho da seção */
+    }
+    #quadrado {
+        margin-top: 20px; /* Adicionei margem superior para separar do conteúdo anterior */
+    }
+}
+
+/* SECTION EDUCA */
+.educa{
+    display: flex;
+    background-color:#334B35;
     padding: 5%;
 }
+/* FIM SECTION EDUCA */
 
-.perfil h1{
-    font-size: 70px;
-}
-
-#quadrado{
-    background-color: #334B35;
-    height: 35rem;
-    width: 25rem;
+.se{
+    padding: 0 20%;
 }
