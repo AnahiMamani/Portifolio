@@ -75,15 +75,16 @@ footer a {
 /* SECTION PERFIL */
 .perfil {
     display: flex;
-    background-color: #FDAD16;
-    padding: 3% 8% ;
+    background-color:#F6EEE1;
+    padding: 0% 6% ;
 }
 .perfil-div {
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 50%; /* Cada div da seção ocupará 50% do tamanho da seção */
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .perfil h1 {
@@ -97,7 +98,7 @@ footer a {
 }
 
 .botaol{
-    background-color: #334B35;
+    background-color: #FDAD16;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -110,24 +111,59 @@ footer a {
 }
 #quadrado {
     background-color: #a7c9aa;
-    height: 113%; /* Defini uma altura fixa para o quadrado */
-    width: 54%; /* Defini uma largura fixa para o quadrado */
-    margin-top: 21%; /* Adicionei margem superior para separar do conteúdo anterior */
+    width: 30vw;
+    height: 41vw; /* Definir a altura igual à largura para manter a proporção */
+    margin-top: 0vw; /* Ajustar a margem superior para centralizar verticalmente */
     display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    position: relative; /* Alterar para posição relativa */
+    z-index: 1; /* Definir uma ordem de empilhamento maior para sobrepor a seção de educação */
+    top:6vw
+}
+
+#quadrado img{
+    width: 33vw;
+    top: -9vw;
+    position: absolute;
+}
+
+#info{
+    background-color: black;
+    width: 30vw;
+    height: 12vw;
+    position: absolute;
+    top: 29vw;
+    text-align: center;
+}
+
+#info h1{
+    color: white;
+    font-size: 3vw;
+}
+
+#info p{
+    color: white;
+    font-size: 1.6vw;
+    margin-top: 0.4vw;
 }
 
 /* Estilos para dispositivos com largura máxima de 600px (dispositivos móveis) */
 @media only screen and (max-width: 600px) {
     .perfil {
         flex-direction: column; /* Alterado para coluna para que os divs fiquem um abaixo do outro */
+        padding: 5% 6%;
     }
     .perfil-div {
-        width: 100%; /* Nas telas menores, cada div ocupará 100% do tamanho da seção */
+        width: 100%;
     }
-    /* #quadrado {
-        margin-top: 21%; /* Adicionei margem superior para separar do conteúdo anterior
-    } */
+    #quadrado {
+        width: 65vw; /* Reduzir a largura para se ajustar melhor em dispositivos móveis */
+        height: 90vw; /* Manter a proporção */
+        margin-top: -2vw; /* Ajustar a margem superior */
+        top:16vw;
+    }
 }
 
 /* SECTION EDUCA */
@@ -140,4 +176,9 @@ footer a {
 
 .se{
     padding: 0 6%;
+}
+
+.se p {
+    padding-right: 4vw;
+    text-align: justify;
 }
