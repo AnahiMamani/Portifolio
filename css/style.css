@@ -1,4 +1,6 @@
+
 /* TIRANDO CONFIGURAÇÕES PADRAO */
+/* @import url(Mobile.css); */
 body {
     font-size: 16px;
     height: 100%;
@@ -43,7 +45,7 @@ nav a:last-child {
 
 /* FOOTER */
 footer {
-    background-color: #ac9268;
+    background-color: #DE9230;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -61,7 +63,7 @@ footer a {
 .icon {
     font-size: 25px;
     color: white;
-    background-color: #FDAD16;
+    background-color: #B7AD10;
     height: 50px; /* Ajustei a altura e largura para 50px para manter o tamanho do ícone */
     width: 50px;
     border-radius: 50%; /* Adicionei o border-radius para criar a forma circular */
@@ -75,7 +77,7 @@ footer a {
 /* SECTION PERFIL */
 .perfil {
     display: flex;
-    background-color:#F6EEE1;
+    background-color:#F1DCC0;
     padding: 0% 6% ;
 }
 .perfil-div {
@@ -85,6 +87,15 @@ footer a {
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+.se{
+    padding: 0 6%;
+}
+
+.se p {
+    padding-right: 4vw;
+    text-align: justify;
 }
 
 .perfil h1 {
@@ -98,7 +109,7 @@ footer a {
 }
 
 .botaol{
-    background-color: #FDAD16;
+    background-color: #DE9230;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -110,7 +121,7 @@ footer a {
     margin-right: 10%;
 }
 #quadrado {
-    background-color: #a7c9aa;
+    background-color: #B7AD10;
     width: 30vw;
     height: 41vw; /* Definir a altura igual à largura para manter a proporção */
     margin-top: 0vw; /* Ajustar a margem superior para centralizar verticalmente */
@@ -148,37 +159,14 @@ footer a {
     font-size: 1.6vw;
     margin-top: 0.4vw;
 }
-
-/* Estilos para dispositivos com largura máxima de 600px (dispositivos móveis) */
-@media only screen and (max-width: 600px) {
-    .perfil {
-        flex-direction: column; /* Alterado para coluna para que os divs fiquem um abaixo do outro */
-        padding: 5% 6%;
-    }
-    .perfil-div {
-        width: 100%;
-    }
-    #quadrado {
-        width: 65vw; /* Reduzir a largura para se ajustar melhor em dispositivos móveis */
-        height: 90vw; /* Manter a proporção */
-        margin-top: -2vw; /* Ajustar a margem superior */
-        top:16vw;
-    }
-}
-
 /* SECTION EDUCA */
 .educa{
     display: flex;
-    background-color:#334B35;
+    background-color:#495424;
     padding: 5%;
 }
 /* FIM SECTION EDUCA */
 
-.se{
-    padding: 0 6%;
-}
-
-.se p {
-    padding-right: 4vw;
-    text-align: justify;
+.activity {
+    background-color: #F1DCC0;
 }

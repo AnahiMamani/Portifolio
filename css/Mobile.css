@@ -1,0 +1,41 @@
+/* Estilos para dispositivos com largura máxima de 600px (dispositivos móveis) */
+@media only screen and (max-width: 600px) {
+    .perfil {
+        flex-direction: column; /* Alterado para coluna para que os divs fiquem um abaixo do outro */
+        padding: 5% 6%;
+    }
+    .perfil-div {
+        width: 100%;
+    }
+    #quadrado {
+        width: 65vw; /* Reduzir a largura para se ajustar melhor em dispositivos móveis */
+        height: 90vw; /* Manter a proporção */
+        margin-top: -2vw; /* Ajustar a margem superior */
+        top:16vw;
+    }
+    #quadrado img{
+        width: 64vw;
+        top: -15vw;
+        position: absolute;
+    }
+    
+    #info{
+        background-color: black;
+        width: 65vw;
+        height: 22vw;
+        position: absolute;
+        top: 68vw;
+        text-align: center;
+    }
+    
+    #info h1{
+        color: white;
+        font-size: 6vw;
+    }
+    
+    #info p{
+        color: white;
+        font-size: 3.6vw;
+        margin-top: 0.4vw;
+    }
+}
