@@ -26,6 +26,8 @@
 }
 
 .acdados {
+    align-items: center;
+    justify-content: space-around;
     display: flex;
     padding-top: 2vw;
     align-items: center;
@@ -34,6 +36,7 @@
 .actitulo {
     font-size: 3.6vw;
     color: #000000;
+    padding-top: 3vw;
 }
 
 .accademia {
@@ -69,26 +72,48 @@
     padding-top: 11vw;
     font-size: 3.6vw;
     color: #000000;
+
 }
 
 .idioma {
-    font-size: 2.5vw;
+    font-size: 2vw;
+    font-weight: bold;
+    padding-right: 4vw;
 }
 
-.idioma p:first-child{
-    font-weight: bold;
+.idioma p:last-child{
+    font-size: 1.2vw;
 }
 
 .educa-div-ac-a {
     display: flex;
     position: relative;
-    padding-top: 3vw;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     padding-bottom: 5vw;
 
 }
 
 .idioma img{
     width: 5vw;
+}
+
+
+.hobby {
+    display: flex;
+    flex-direction: column;
+    color:rgb(26, 26, 26);
+    margin-left: 20px; /* Ajuste a margem conforme necessário */
+}
+
+.hobbysicons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hobbysicons img {
+    width: 5vw;
+    margin-right: 5px; /* Adiciona um pequeno espaçamento entre a imagem e o texto */
 }
