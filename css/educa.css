@@ -1,0 +1,110 @@
+/* SECTION EDUCA */
+.educa {
+    display: flex;
+    background-color: #495424;
+    padding: 0% 6%;
+}
+
+.educa-div {
+    width: 50%;
+    display: flex;
+    position: relative;
+    padding-top: 5vw;
+    flex-direction: column;
+}
+.educa-div-p {
+    width: 50%;
+    display: flex;
+    position: relative;
+    padding-top: 13vw;
+    flex-direction: column;
+    padding-left: 3vw;
+}
+
+.educacao {
+    padding: 0% 7%;
+    text-align: center;
+}
+
+.edudados {
+    display: flex;
+    padding-top: 2vw;
+    align-items: center;
+}
+
+.edutitulo {
+    font-size: 3.6vw;
+    color: #DE9230;
+}
+
+.educademia {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; /* Ajuste a margem conforme necessário */
+}
+
+.star-h1 img{
+    width: 3vw;
+}
+
+.star-h1 {
+    display: flex;
+    align-items: center;
+}
+
+.star-h1 h1 {
+    font-size: 1.5vw;
+    color: white;
+    margin-left: 10px; /* Ajuste a margem conforme necessário */
+}
+
+.educademia p {
+    color: white;
+}
+
+.educademia p:last-child {
+    color: rgb(180, 180, 180);
+} 
+/* ----------- */
+.educadois {
+    display: flex;
+    background-color: #495424;
+}
+
+.educa-divdois {
+    width: 50%;
+    display: flex;
+    position: relative;
+    padding: 1vw 0vw;
+    flex-direction: column;
+    color: white;
+    font-size: 1.5vw;
+}
+.icon-p img{
+    width: 2.5vw;
+}
+
+.icon-p {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1vw;
+}
+
+.icon-p p {
+    font-size: 1.1vw;
+    color: white;
+    margin-left: 10px; /* Ajuste a margem conforme necessário */
+}
+
+.edup{
+    color: rgb(180, 180, 180);
+    font-size: 1.2vw;
+}
+
+.a{
+    padding-top: 1vw;
+}
+
+#position{
+    top: 4vw;
+}

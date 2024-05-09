@@ -6,6 +6,8 @@
     }
     .perfil-div {
         width: 100%;
+        padding-top: 5vw;
+
     }
     #quadrado {
         width: 65vw; /* Reduzir a largura para se ajustar melhor em dispositivos móveis */

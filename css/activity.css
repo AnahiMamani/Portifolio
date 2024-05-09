@@ -1,0 +1,94 @@
+.activity {
+    background-color: #F1DCC0;
+    display: flex;
+    padding: 0% 6%;
+}
+
+.quadradois{
+    background-color: #DE9230;
+    width: 38vw;
+    height: 14vw;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: -10vw;
+    padding: 2vw;
+}
+
+.educa-div-ac {
+    display: flex;
+    position: relative;
+    padding-top: 1vw;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 5vw;
+
+}
+
+.acdados {
+    display: flex;
+    padding-top: 2vw;
+    align-items: center;
+}
+
+.actitulo {
+    font-size: 3.6vw;
+    color: #000000;
+}
+
+.accademia {
+    /* font-size: 1.1vw; */
+    display: flex;
+    /* font-weight: bold; */
+    flex-direction: column;
+    color:rgb(26, 26, 26);
+    margin-left: 20px; /* Ajuste a margem conforme necessário */
+}
+
+.acpb{
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+.acstar-h1 img{
+    width: 3vw;
+}
+
+.acstar-h1 {
+    display: flex;
+    align-items: center;
+}
+
+.acstar-h1 h1 {
+    font-size: 2vw;
+    color: rgb(0, 0, 0);
+    margin-left: 10px; /* Ajuste a margem conforme necessário */
+}
+
+.actitulodois{
+    padding-top: 11vw;
+    font-size: 3.6vw;
+    color: #000000;
+}
+
+.idioma {
+    font-size: 2.5vw;
+}
+
+.idioma p:first-child{
+    font-weight: bold;
+}
+
+.educa-div-ac-a {
+    display: flex;
+    position: relative;
+    padding-top: 3vw;
+    flex-direction: column;
+    width: 50%;
+    padding-bottom: 5vw;
+
+}
+
+.idioma img{
+    width: 5vw;
+}
