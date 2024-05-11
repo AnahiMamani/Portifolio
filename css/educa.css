@@ -16,7 +16,7 @@
     width: 50%;
     display: flex;
     position: relative;
-    padding-top: 13vw;
+    padding-top: 18vw;
     flex-direction: column;
     padding-left: 3vw;
 }
@@ -52,7 +52,7 @@
     align-items: center;
 }
 
-.star-h1 h1 {
+.star-h1 h2 {
     font-size: 1.5vw;
     color: white;
     margin-left: 10px; /* Ajuste a margem conforme necessário */
@@ -68,7 +68,7 @@
 /* ----------- */
 .educadois {
     display: flex;
-    background-color: #495424;
+    /* background-color: #495424; */
 }
 
 .educa-divdois {

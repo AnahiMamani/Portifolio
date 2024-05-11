@@ -4,23 +4,44 @@
         flex-direction: column; /* Alterado para coluna para que os divs fiquem um abaixo do outro */
         padding: 5% 6%;
     }
+    header {
+        font-size: 4vw;
+        flex-direction: column; /* Alterado para coluna para que os divs fiquem um abaixo do outro */
+        /* padding: 5% 6%; */
+    }
+
     .perfil-div {
         width: 100%;
         padding-top: 5vw;
 
     }
-    #quadrado {
+    .quadrado {
         width: 65vw; /* Reduzir a largura para se ajustar melhor em dispositivos móveis */
         height: 90vw; /* Manter a proporção */
         margin-top: -2vw; /* Ajustar a margem superior */
         top:16vw;
     }
-    #quadrado img{
+    .quadrado img{
         width: 64vw;
         top: -15vw;
         position: absolute;
     }
     
+    .educa {
+        flex-direction: column; /* Alterado para coluna para que os divs fiquem um abaixo do outro */
+        padding: 5% 6%;
+    }
+
+    .educa-div {
+        width: 100%;
+        padding-top: 30vw;
+    }
+
+    .activity {
+        flex-direction: column; /* Alterado para coluna para que os divs fiquem um abaixo do outro */
+        padding: 5% 6%;
+    }
+
     #info{
         background-color: black;
         width: 65vw;

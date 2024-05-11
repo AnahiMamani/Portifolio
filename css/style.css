@@ -48,6 +48,10 @@ header {
 nav a {
     margin-right: 20px;
 }
+nav>a:hover {
+    font-weight: bold;
+    color: #B7AD10;
+}
 
 /* aqui estou dizendo que o ultimo elemento do nav tera a marginright zerada, em vez de 20px */
 nav a:last-child {
@@ -62,13 +66,13 @@ footer {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 6%;
+    padding: 3%;
 }
 footer a {
     color: white;
 }
 .footer-div {
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     display: flex;
     color: black;
 }
@@ -90,7 +94,7 @@ footer a {
 .perfil {
     display: flex;
     background-color:#F1DCC0;
-    padding: 0% 6% ;
+    padding: 0% 4% ;
 }
 .perfil-div {
     width: 50%; /* Cada div da seção ocupará 50% do tamanho da seção */
@@ -111,8 +115,8 @@ footer a {
 }
 
 .perfil h1 {
-    font-size: 4rem; /* Reduzi o tamanho da fonte para que caiba em dispositivos móveis */
-    font-size: min(60px,6vw);
+    /* font-size: 4rem; Reduzi o tamanho da fonte para que caiba em dispositivos móveis */
+    font-size: min(80px,6vw);
 }
 
 .perfil p {
@@ -122,7 +126,7 @@ footer a {
 
 .botaol{
     background-color: #DE9230;
-    border-radius: 10px;
+    border-radius: 5vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,7 +134,8 @@ footer a {
     color: white;
 }
 .botao1-div{
-    margin-right: 10%;
+    font-size: 2vw;
+    margin-right: 5%;
 }
 .quadrado {
     background-color: #B7AD10;

@@ -122,3 +122,21 @@
     color: #000000;
     padding-top: 3vw;
 }
+
+.letras{
+    display: inline;
+    position: absolute;
+    z-index: 0;
+    top: 38vw;
+    text-align: center;
+}
+
+.letras > h1{
+    font-size: 8vw;
+    margin: -21px;
+    border: 1px solid;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #DE9230;
+    opacity: 0.5;
+    color: transparent;
+} 
