@@ -36,7 +36,6 @@
 .actitulo {
     font-size: 3.6vw;
     color: #000000;
-    padding-top: 3vw;
 }
 
 .accademia {
@@ -116,4 +115,10 @@
 .hobbysicons img {
     width: 5vw;
     margin-right: 5px; /* Adiciona um pequeno espaçamento entre a imagem e o texto */
+}
+
+.actitulotres{
+    font-size: 3.6vw;
+    color: #000000;
+    padding-top: 3vw;
 }
