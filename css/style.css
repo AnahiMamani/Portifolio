@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+@font-face {
+    font-family: kolak;
+    src: url('fonts/KOLAK.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: arsenico;
+    src: url('fonts/ArsenicaTrial-Medium.ttf') format('truetype');
+}
 /* TIRANDO CONFIGURAÇÕES PADRAO */
 /* @import url(Mobile.css); */
 body {
@@ -6,7 +16,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:Quicksand;
 }
 
 p{
@@ -15,6 +25,7 @@ p{
 
 h1{
     margin: 0;
+    font-family: arsenico;
 }
 
 a {
@@ -59,7 +70,7 @@ footer a {
 .footer-div {
     margin-bottom: 5px;
     display: flex;
-    color: gray;
+    color: black;
 }
 .icon {
     font-size: 25px;
@@ -71,7 +82,7 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 10px 40px; /* Ajustei a margem para centralizar os ícones */
+    margin: 0 10px 0px; /* Ajustei a margem para centralizar os ícones */
 }
 /* FIM FOOTER */
 
@@ -159,4 +170,14 @@ footer a {
     color: white;
     font-size: 1.6vw;
     margin-top: 0.4vw;
+}
+
+.sd{
+    display: flex;
+}
+
+hr{
+    /* height: 1vw; */
+    width: 8vw;
+    background-color: white;
 }
