@@ -1,16 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
 @font-face {
     font-family: kolak;
     src: url('fonts/KOLAK.TTF') format('truetype');
 }
-
 @font-face {
     font-family: arsenico;
     src: url('fonts/ArsenicaTrial-Medium.ttf') format('truetype');
 }
 /* TIRANDO CONFIGURAÇÕES PADRAO */
-/* @import url(Mobile.css); */
 body {
     font-size: 16px;
     height: 100%;
@@ -18,23 +15,18 @@ body {
     padding: 0;
     font-family:Quicksand;
 }
-
 p{
     margin: 0;
 }
-
 h1{
     margin: 0;
     font-family: arsenico;
 }
-
 a {
     text-decoration: none;
     color: black;
 }
-
 /* FIM CONFIGURAÇÕES PADRAO */
-
 /* HEADER */
 header {
     background-color: #F6EEE1;
@@ -45,10 +37,13 @@ header {
     font-size:1.7vw;
 }
 
-.navhover{
-    margin-right: 20px;
+nav a {
+    margin-right: 20px; 
+    text-decoration: none; 
+    color: black;
 }
-.navhover:hover {
+
+nav a:hover {
     font-weight: bold;
     color: #B7AD10;
 }
@@ -58,7 +53,6 @@ nav a:last-child {
     margin-right: 0;
 }
 /* FIM HEADER */
-
 /* FOOTER */
 footer {
     background-color: #DE9230;
@@ -89,7 +83,6 @@ footer {
     margin: 0 10px 0px; /* Ajustei a margem para centralizar os ícones */
 }
 /* FIM FOOTER */
-
 /* SECTION PERFIL */
 .perfil {
     display: flex;
@@ -104,26 +97,21 @@ footer {
     position: relative;
     padding: 1vw;
 }
-
 .se{
     padding: 0 6%;
 }
-
 .se p {
     padding-right: 4vw;
     text-align: justify;
 }
-
 .perfil h1 {
     /* font-size: 4rem; Reduzi o tamanho da fonte para que caiba em dispositivos móveis */
     font-size: min(80px,6vw);
 }
-
 .perfil p {
     margin-top: 20px; /* Adicionei margem superior para separar o parágrafo */
     font-size: min(19px,5vw);
 }
-
 .botaol{
     background-color: #DE9230;
     border-radius: 5vw;
@@ -166,28 +154,86 @@ footer {
     top: 29vw;
     text-align: center;
 }
-
 #info h1{
     color: white;
     font-size: 3vw;
 }
-
 #info p{
     color: white;
     font-size: 1.6vw;
     margin-top: 0.4vw;
 }
-
 .sd{
     display: flex;
 }
-
 hr{
     /* height: 1vw; */
     width: 8vw;
     background-color: white;
 }
 
+/* ------------------------------------------- */
+/* Estilos para dispositivos com largura máxima de 600px (dispositivos móveis) */
+@media only screen and (max-width: 600px) {
+    .perfil {
+        flex-direction: column; /* Alterado para coluna para que os divs fiquem um abaixo do outro */
+        padding: 5% 6%;
+    }
+    header {
+        font-size: 4vw;
+        flex-direction: column; /* Alterado para coluna para que os divs fiquem um abaixo do outro */
+        /* padding: 5% 6%; */
+    }
 
+    .perfil-div {
+        width: 100%;
+        padding-top: 5vw;
 
+    }
+    .quadrado {
+        width: 65vw; /* Reduzir a largura para se ajustar melhor em dispositivos móveis */
+        height: 90vw; /* Manter a proporção */
+        margin-top: -2vw; /* Ajustar a margem superior */
+        top:16vw;
+    }
+    .quadrado img{
+        width: 64vw;
+        top: -15vw;
+        position: absolute;
+    }
 
+    .educa {
+        flex-direction: column; /* Alterado para coluna para que os divs fiquem um abaixo do outro */
+        padding: 5% 6%;
+    }
+
+    .educa-div {
+        width: 100%;
+        padding-top: 30vw;
+    }
+
+    .activity {
+        flex-direction: column; /* Alterado para coluna para que os divs fiquem um abaixo do outro */
+        padding: 5% 6%;
+    }
+
+    #info{
+        background-color: black;
+        width: 65vw;
+        height: 22vw;
+        position: absolute;
+        top: 68vw;
+        text-align: center;
+    }
+
+    #info h1{
+        color: white;
+        font-size: 6vw;
+    }
+
+    #info p{
+        color: white;
+        font-size: 3.6vw;
+        margin-top: 0.4vw;
+    }
+}
