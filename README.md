@@ -3,11 +3,11 @@
 </p>
 
 <h1>🌟Portfólio Pessoal</h1>
-<p> Este é o meu portfólio digital, onde compartilho minha jornada, habilidades, projetos e contatos. Explore para saber mais sobre mim e o que faço!
+<p> Este é o meu portfólio pessoal, concebido em um estilo criativo, destinado a apresentar minha formação acadêmica, habilidades, conhecimentos em tecnologia, projetos recentes, interesses profissionais e informações de contato. Além disso, disponibilizo meu currículo para detalhes adicionais e informações específicas sobre minha experiência e qualificações.
 </p><br>
 
 <h2>🎯 Objetivo do projeto</h2>
-<p>Aplicar conhecimentos adquiridos durante as aulas de Desenvolvimento Web I.</p><br>
+<p>Este portfólio é uma expressão tangível dos conhecimentos adquiridos durante as aulas de Desenvolvimento Web I. Cada aspecto, desde o design até a funcionalidade, foi desenvolvido com base nos princípios e técnicas aprendidas ao longo do curso.</p><br>
 
 <h2>💻Tecnologias e ferramentas utilizadas</h2>
 <p>
@@ -18,17 +18,7 @@
 
 <h2>👩‍💻 Acesse o site através do link:</h2>
 <a href="https://anahimamani.github.io/Portifolio/" target="_Blank">Meu portfólio pessoal</a><br><br>
-
-<h2>📬 Contatos</h2>
-<p>
-  <a class="botao-footer-github" href="https://github.com/AnahiMamani" target="_Blank">
-    <img src="assets/icons/github-icon.png" alt="Logo do Github" width="30vw" height="30vh">
-  </a>
-  <a class="botao-footer-linkedin" href="https://www.linkedin.com/in/anahinarieli/" target="_Blank">
-    <img src="assets/icons/linkedin-icon.png" alt="Logo do Linkedin" width="30vw" height="30vh">
-  </a>
-</p><br>
-
+<br>
 <p>	&copy; 2024. All rights reserved. Made with by Anahi Narieli.</p> 
 
 
