@@ -1,6 +1,5 @@
 <p align="center">
-  <img loading="lazy" src="https://raw.githubusercontent.com/AnahiMamani/Portifolio/master/imagen/site.png" alt="Capa do projeto 'Meu Portfólio'" style=" height: 20px;
- width: 20px;"/>
+  <img loading="lazy" src="https://raw.githubusercontent.com/AnahiMamani/Portifolio/master/imagen/site.png" alt="Capa do projeto 'Meu Portfólio'" style="width: 20vw;"/>
 </p>
 
 <h1>🌟Portfólio Pessoal</h1>
