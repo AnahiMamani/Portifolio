@@ -68,9 +68,9 @@ footer {
     justify-content: center;
     padding: 3%;
 }
-footer a {
+/* footer a {
     color: white;
-}
+} */
 .footer-div {
     /* margin-bottom: 5px; */
     display: flex;
@@ -152,9 +152,10 @@ footer a {
 }
 
 .quadrado img{
-    width: 33vw;
-    top: -9vw;
+    width: 35vw;
+    top: -13vw;
     position: absolute;
+    padding-right: 4vw;
 }
 
 #info{
@@ -186,3 +187,7 @@ hr{
     width: 8vw;
     background-color: white;
 }
+
+
+
+
