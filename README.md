@@ -1,5 +1,5 @@
 <p align="center">
-  <img loading="lazy" src="[https://github.com/Debora-Carvalho/DeboraCarvalho/assets/104103793/649fc75b-3659-4ff0-9563-868d8765cdce](https://raw.githubusercontent.com/AnahiMamani/Portifolio/master/imagen/site.png)" alt="Capa do projeto 'Meu Portfólio'"/>
+  <img loading="lazy" src="https://raw.githubusercontent.com/AnahiMamani/Portifolio/master/imagen/site.png" alt="Capa do projeto 'Meu Portfólio'"/>
 </p>
 
 <h1>🌟Portfólio Pessoal</h1>
