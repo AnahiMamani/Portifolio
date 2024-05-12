@@ -45,10 +45,10 @@ header {
     font-size:1.7vw;
 }
 
-nav a {
+.navhover{
     margin-right: 20px;
 }
-nav>a:hover {
+.navhover:hover {
     font-weight: bold;
     color: #B7AD10;
 }
