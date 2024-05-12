@@ -3,7 +3,6 @@
 </p>
 
 <h1>🌟Portfólio Pessoal</h1>
-<h3>📄Sobre a página</h3>
 <p> Este é o meu portfólio digital, onde compartilho minha jornada, habilidades, projetos e contatos. Explore para saber mais sobre mim e o que faço!
 </p><br>
 
@@ -17,7 +16,7 @@
   <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="40" height="40" alt="Ícone do Visual Studio Code"/>   
 </p><br>
 
-<h2>👩🏾‍💻 Acesse o site através do link:</h2>
+<h2>👩‍💻 Acesse o site através do link:</h2>
 <a href="https://anahimamani.github.io/Portifolio/" target="_Blank">Meu portfólio pessoal</a><br><br>
 
 <h2>📬 Contatos</h2>
