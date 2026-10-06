@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#344936" />
+    <meta
+      name="description"
+      content="Ingestão incremental e transformação de dados em uma arquitetura Medallion."
+    />
+    <title>SQL Server → BigQuery · Anahi Narieli</title>
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/project.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <script src="../js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header dark">
+      <div class="container header-inner">
+        <a
+          class="brand"
+          href="../index.html"
+          aria-label="Anahi Narieli — página inicial"
+          ><span class="star" aria-hidden="true">✦</span> Anahi Narieli</a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-controls="site-nav"
+          aria-expanded="false"
+        >
+          Menu +
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+          <a href="../index.html#sobre">Sobre mim</a
+          ><a href="../index.html#projetos">Projetos</a
+          ><a href="../index.html#trajetoria">Trajetória</a
+          ><a class="nav-contact" href="#contato">Vamos conversar ↗</a>
+        </nav>
+      </div>
+    </header>
+    <main id="conteudo">
+      <section class="case-hero dark">
+        <div class="container">
+          <a class="breadcrumb" href="../index.html#projetos"
+            >← Todos os projetos</a
+          >
+          <div class="case-heading">
+            <div>
+              <p class="eyebrow">Engenharia de dados · Cloud</p>
+              <h1>SQL Server → BigQuery</h1>
+              <ul class="tags">
+                <li>Python</li>
+                <li>SQL Server</li>
+                <li>BigQuery</li>
+                <li>Dataform</li>
+              </ul>
+            </div>
+            <div>
+              <p class="lead">
+                Ingestão incremental e transformação de dados em uma arquitetura
+                Medallion.
+              </p>
+              <div class="actions" style="margin-top: 1.5rem">
+                <a
+                  class="button"
+                  href="https://github.com/AnahiMamani/gcp-sqlserver-to-bigquery-medallion"
+                  >Explorar o código <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <figure class="case-visual">
+            <div class="cover-art pipeline">
+              <span>Engenharia de dados</span
+              ><strong>Da origem<br />à análise.</strong>
+              <div class="pipeline-route">
+                <i>SQL Server</i><b aria-hidden="true">→</b><i>BigQuery</i
+                ><b aria-hidden="true">→</b><i>Dataform</i>
+              </div>
+            </div>
+            <figcaption>
+              Esquema editorial baseado no fluxo documentado no README; não é
+              uma captura de execução.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <div class="container section case-body">
+        <aside class="case-index" aria-label="Nesta página">
+          <p>Neste projeto</p>
+          <a href="#contexto">01 / O projeto</a
+          ><a href="#participacao">02 / Minha participação</a
+          ><a href="#stack">03 / Tecnologias</a
+          ><a href="#galeria">04 / Registros visuais</a
+          ><a href="#codigo">05 / Código-fonte</a>
+        </aside>
+        <div class="case-copy">
+          <section id="contexto">
+            <h2>O projeto</h2>
+            <p>
+              Este pipeline simula a sincronização de uma origem SQL Server com
+              o BigQuery. A ingestão em Python identifica registros novos,
+              alterados e removidos; o Dataform organiza as transformações
+              analíticas.
+            </p>
+            <h3>Proposta e estrutura</h3>
+            <p>
+              A camada Bronze recebe os dados de origem. A Silver normaliza e
+              tipa os registros. A Gold consolida os dados para análise,
+              incluindo dimensões temporais e métricas.
+            </p>
+          </section>
+          <section id="participacao">
+            <h2>Minha participação</h2>
+            <p>A descrição da minha contribuição está em revisão.</p>
+            <div class="note">
+              <p>
+                Falta descrever minha contribuição específica na ingestão, nas
+                transformações e na configuração cloud.
+              </p>
+            </div>
+          </section>
+          <section id="stack">
+            <h2>Tecnologias do projeto</h2>
+            <p>
+              Ferramentas identificadas no código e na documentação do
+              repositório.
+            </p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>SQL Server</li>
+              <li>BigQuery</li>
+              <li>Dataform</li>
+              <li>Pandas</li>
+              <li>Google Secret Manager</li>
+            </ul>
+          </section>
+          <section id="galeria">
+            <h2>Registros visuais</h2>
+            <p>
+              Esquema editorial baseado no fluxo documentado no README; não é
+              uma captura de execução.
+            </p>
+            <div class="note">
+              Falta adicionar uma captura real da execução do pipeline ou de
+              seus resultados.
+            </div>
+          </section>
+          <section id="codigo">
+            <h2>Explore o código</h2>
+            <p>Estrutura, arquivos e documentação do projeto no GitHub.</p>
+            <a
+              class="text-link"
+              href="https://github.com/AnahiMamani/gcp-sqlserver-to-bigquery-medallion"
+              >gcp-sqlserver-to-bigquery-medallion ↗</a
+            >
+          </section>
+          <div class="next-project">
+            <p>Continue explorando</p>
+            <a href="connectstudents.html"
+              >ConnectStudents
+              <span class="arrow" aria-hidden="true">→</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer" id="contato">
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <p class="eyebrow">Contato</p>
+            <h2>Vamos trocar ideias?</h2>
+            <p>
+              Sobre dados, desenvolvimento de software e os caminhos entre essas
+              duas áreas.
+            </p>
+            <div class="footer-links">
+              <a
+                class="text-link"
+                href="https://www.linkedin.com/in/anahinarieli/"
+                >LinkedIn <span aria-hidden="true">↗</span></a
+              ><a class="text-link" href="https://github.com/AnahiMamani"
+                >GitHub <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+          <span class="footer-star" aria-hidden="true">✦</span>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Anahi Narieli Guarachi Mamani</span
+          ><a href="https://github.com/AnahiMamani/Portifolio"
+            >Código deste portfólio ↗</a
+          ><a href="#conteudo">Voltar ao início ↑</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

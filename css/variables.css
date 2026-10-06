@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Arsenica;
+  src: url("../assets/fonts/ArsenicaTrial-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+:root {
+  --color-cream: #f6eee1;
+  --color-paper: #fff9ee;
+  --color-green: #344936;
+  --color-green-dark: #233629;
+  --color-orange: #c85c35;
+  --color-yellow: #f3b534;
+  --color-black: #22271f;
+  --color-muted: #596052;
+  --color-line: #cfcbbb;
+  --font-display: Arsenica, Georgia, serif;
+  --font-body: Arial, Helvetica, sans-serif;
+  --space-section: clamp(4rem, 8vw, 7rem);
+  --container: 1200px;
+}

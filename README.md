@@ -1,26 +1,63 @@
-<p align="center">
-  <img loading="lazy" src="https://raw.githubusercontent.com/AnahiMamani/Portifolio/master/imagen/site.png" alt="Capa do projeto 'Meu Portfólio'" style="width: 20vw;"/>
-</p>
+# Portfólio — Anahi Narieli
 
-<h1>🌟Portfólio Pessoal</h1>
-<p> Este é o meu portfólio pessoal, concebido em um estilo criativo, destinado a apresentar minha formação acadêmica, habilidades, conhecimentos em tecnologia, projetos recentes, interesses profissionais e informações de contato. Além disso, disponibilizo meu currículo para detalhes adicionais e informações específicas sobre minha experiência e qualificações.
-</p><br>
+Portfólio acadêmico e profissional estático, em português, com HTML semântico, CSS e JavaScript. Preserva a identidade creme, verde, laranja, tipografia serifada e estrelas do projeto original.
 
-<h2>🎯 Objetivo do projeto</h2>
-<p>Este portfólio é uma expressão tangível dos conhecimentos adquiridos durante as aulas de Desenvolvimento Web I. Cada aspecto, desde o design até a funcionalidade, foi desenvolvido com base nos princípios e técnicas aprendidas ao longo do curso.</p><br>
+**Status: versão de revisão.** Os seis projetos acadêmicos e a participação individual estão registrados. Restam informações complementares de cursos e experiência, descritas em [docs/PENDENCIAS.md](docs/PENDENCIAS.md).
 
-<h2>💻Tecnologias e ferramentas utilizadas</h2>
-<p>
-  <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="40" height="40" alt="Ícone do html5"/> 
-  <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="40" height="40" alt="Ícone do css3"/> 
-  <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="40" height="40" alt="Ícone do Visual Studio Code"/>   
-</p><br>
+## Visualizar
 
-<h2>👩‍💻 Acesse o site através do link:</h2>
-<a href="https://anahimamani.github.io/Portifolio/" target="_Blank">Meu portfólio pessoal</a><br><br>
-<br>
-<p>	&copy; 2024. All rights reserved. Made with by Anahi Narieli.</p> 
+Abra `index.html` no navegador. Não é necessário instalar dependências nem executar um build.
 
+Opcionalmente, na pasta do projeto:
 
+```bash
+python3 -m http.server 8000
+```
 
+Acesse `http://localhost:8000`.
 
+## Estrutura
+
+- `index.html`: apresentação, projetos, formação, experiência, tecnologias, cursos, idiomas e contato.
+- `projetos/`: dez páginas independentes (seis projetos acadêmicos e quatro adicionais) com descrição, stack, participação, registros visuais e repositório.
+- `assets/images/`: retrato e favicon.
+- `assets/projects/`: registros visuais dos projetos.
+- `assets/fonts/`: tipografia original reutilizada.
+- `css/variables.css`: cores e tipografia.
+- `css/base.css`: regras gerais, acessibilidade e elementos compartilhados.
+- `css/components.css`: navegação, cards, filtros e rodapé.
+- `css/home.css` e `css/project.css`: layouts específicos.
+- `css/responsive.css`: adaptação por largura e impressão.
+- `js/main.js`: menu, filtros acadêmicos e galeria ampliável, com melhoria progressiva.
+- `docs/`: pendências, fontes e validação.
+- `tests/validate.py`: verificação de caminhos locais, âncoras e semântica básica, sem dependências.
+
+## Manutenção
+
+Edite os textos diretamente no HTML. Cada projeto possui seu próprio arquivo. Ao adicionar um projeto, copie uma página existente, atualize seu conteúdo e acrescente o card em `index.html`. Ajuste também o link de próximo projeto.
+
+Substitua screenshots em `assets/projects/` e atualize o texto alternativo e a legenda para corresponder à imagem. Não use imagens ilustrativas como comprovação do funcionamento do software.
+
+Os filtros aceitam `web`, `mobile` e `desktop` no atributo `data-category` dos cards em `#academic-grid`. Os quatro projetos adicionais ficam em uma seção expansível. Sem JavaScript, todos os projetos e a navegação continuam disponíveis; os links das imagens abrem os arquivos diretamente. Com JavaScript, a galeria permite ampliar, navegar com as setas e fechar com Escape, devolvendo o foco à miniatura.
+
+## Publicar no GitHub Pages
+
+1. Revise a branch `portfolio-redesign-2026` e complete as pendências de conteúdo.
+2. Faça o merge da revisão aprovada na `master`.
+3. No GitHub, abra **Settings → Pages**. Para publicação por branch, use **Deploy from a branch**, branch **master**, pasta **/(root)**.
+4. Aguarde a publicação e abra `https://anahimamani.github.io/Portifolio/`.
+5. Confirme a home, uma página interna e as imagens após o deploy.
+
+Todos os recursos do site usam caminhos relativos e funcionam sob `/Portifolio/`. O arquivo `.nojekyll` evita processamento Jekyll. O site não precisa de backend, npm, React, Vite ou variáveis de ambiente.
+
+Referência: [documentação oficial de publicação do GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+
+A configuração atual do Pages não foi alterada. Esta revisão não foi publicada nem mesclada à `master`.
+
+## Validar
+
+```bash
+python3 tests/validate.py
+```
+
+Veja o escopo dos testes de navegador e suas limitações em [docs/VALIDACAO.md](docs/VALIDACAO.md).
