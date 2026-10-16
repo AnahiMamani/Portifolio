@@ -19,9 +19,9 @@ O portfólio de referência identifica o Poupas como `2026.2s`, mas a autora o s
 
 ## Informações ainda ausentes
 
-- **Cursos e certificações:** instituição, carga horária e datas de início/término ou conclusão dos títulos listados no PDF. Links de credenciais são opcionais.
-- **IBM:** uma descrição concreta das atividades autorizadas para publicação pode complementar o texto geral atual. Cargo e período foram mantidos conforme o PDF.
-- **Greenhouse:** ainda não há screenshots fornecidas para a galeria. O repositório é privado e seu link exige autorização da organização. A capa é identificada como editorial.
+- **Cursos e certificações:** os títulos foram atualizados conforme o currículo atual (instituição e ano incluídos). As cargas horárias e datas exatas ainda podem ser complementadas a partir dos certificados. Links de credenciais são opcionais.
+- **IBM:** descrição das atividades atualizada conforme o currículo, incluindo a atuação no projeto Data Recovery (Vale) desde março de 2026.
+- **Greenhouse:** ainda não há screenshots fornecidas para a galeria. O repositório é privado (organização TheLovelace, ex-Best-of-the-class) e seu link exige autorização. A capa é identificada como editorial. Descrição e stack atualizadas conforme o README da branch `develop`.
 - **Projetos adicionais:** Pipeline, ConnectStudents, Rosycoffee e PetCare permanecem em uma seção secundária. Seus detalhes individuais ainda podem ser complementados; eles não substituem os seis projetos acadêmicos.
 
 ## Publicação
