@@ -117,6 +117,93 @@
 .hero-social a:hover {
   text-decoration: underline;
 }
+.hero-words {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 0.75rem;
+  font-family: var(--font-display);
+  font-size: clamp(3.4rem, 9vw, 8rem);
+  line-height: 0.88;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--color-cream);
+}
+.hero-words .w-outline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px #e8b26c;
+}
+.scroll-badge {
+  position: absolute;
+  left: clamp(1.5rem, 9%, 8rem);
+  bottom: 4.4rem;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+}
+.scroll-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--color-yellow);
+  color: var(--color-black);
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
+  transition: transform 0.25s;
+}
+.scroll-badge:hover .scroll-circle {
+  transform: translateY(4px);
+}
+.scroll-text {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-cream);
+}
+.portrait-pill {
+  position: absolute;
+  z-index: 4;
+  background: var(--color-yellow);
+  color: var(--color-black);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.45rem 0.95rem;
+  border-radius: 99px;
+  white-space: nowrap;
+}
+.pill-top {
+  top: 13%;
+  right: -0.85rem;
+}
+.pill-bottom {
+  bottom: 26%;
+  left: -0.85rem;
+}
+.section {
+  position: relative;
+}
+.section-word {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-family: var(--font-display);
+  font-size: clamp(4.5rem, 10.5vw, 9.5rem);
+  line-height: 1;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #c85c3547;
+  pointer-events: none;
+  user-select: none;
+}
+.dark .section-word {
+  -webkit-text-stroke-color: #f6eee12e;
+}
 .hero-ribbon {
   margin-top: 3.5rem;
   background: var(--color-green-dark);

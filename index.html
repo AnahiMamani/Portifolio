@@ -7,24 +7,31 @@
     <meta
       name="description"
       content="Portfólio de Anahi Narieli Guarachi Mamani: engenharia de dados, desenvolvimento de software, formação e projetos."
+      data-i18n-content="meta.description"
     />
-    <title>Portfólio — Dados &amp; desenvolvimento · Anahi Narieli</title>
+    <title data-i18n="meta.title">
+      Portfólio — Dados &amp; desenvolvimento · Anahi Narieli
+    </title>
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <script src="js/i18n.js" defer></script>
     <script src="js/main.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <a class="skip-link" href="#conteudo" data-i18n="nav.skip"
+      >Pular para o conteúdo</a
+    >
     <header class="site-header dark">
       <div class="container header-inner">
         <a
           class="brand"
           href="index.html"
           aria-label="Anahi Narieli — página inicial"
+          data-i18n-aria="nav.brand-aria"
           ><span class="star" aria-hidden="true">✦</span> Anahi Narieli</a
         ><button
           class="menu-toggle"
@@ -34,11 +41,30 @@
         >
           Menu +
         </button>
-        <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
-          <a href="index.html#sobre">Sobre mim</a
-          ><a href="index.html#projetos">Projetos</a
-          ><a href="index.html#trajetoria">Trajetória</a
-          ><a class="nav-contact" href="#contato">Vamos conversar ↗</a>
+        <nav
+          class="site-nav"
+          id="site-nav"
+          aria-label="Navegação principal"
+          data-i18n-aria="nav.main"
+        >
+          <a href="index.html#sobre" data-i18n="nav.about">Sobre mim</a
+          ><a href="index.html#projetos" data-i18n="nav.projects">Projetos</a
+          ><a href="index.html#trajetoria" data-i18n="nav.trajectory"
+            >Trajetória</a
+          ><a class="nav-contact" href="#contato" data-i18n="nav.contact"
+            >Vamos conversar ↗</a
+          ><span
+            class="lang-switch"
+            role="group"
+            aria-label="Idioma"
+            data-i18n-aria="nav.lang"
+            ><button type="button" data-lang="pt" aria-pressed="true">PT</button
+            ><button type="button" data-lang="en" aria-pressed="false">
+              EN</button
+            ><button type="button" data-lang="es" aria-pressed="false">
+              ES
+            </button></span
+          >
         </nav>
       </div>
     </header>
@@ -46,41 +72,57 @@
       <section class="hero dark" aria-labelledby="hero-title">
         <div class="container">
           <div class="hero-topline">
-            <p class="eyebrow">Dados · Software · Criatividade</p>
-            <span>São Paulo, Brasil<br />Portfólio / 2026</span>
+            <p class="eyebrow" data-i18n="hero.eyebrow">
+              Dados · Software · Criatividade
+            </p>
+            <span data-i18n="hero.topline"
+              >São Paulo, Brasil<br />Portfólio / 2026</span
+            >
           </div>
-          <h1 class="hero-title" id="hero-title">
+          <h1 class="hero-title" id="hero-title" data-i18n="hero.title">
             Olá, eu sou <span class="outline">Anahi.</span>
           </h1>
           <div class="hero-grid">
             <figure class="portrait-wrap">
               <span class="portrait-star" aria-hidden="true">✦</span>
+              <span class="portrait-pill pill-top" data-i18n="hero.pill-top"
+                >Engenharia de dados</span
+              >
+              <span class="portrait-pill pill-bottom" data-i18n="hero.pill-bottom"
+                >Dev · Fatec ZL</span
+              >
               <div class="portrait">
                 <img
                   src="assets/images/anahi.png"
-                  width="432"
-                  height="577"
-                  alt="Anahi Narieli sorrindo, de óculos e braços cruzados."
+                  width="495"
+                  height="882"
+                  alt="Anahi Narieli sorrindo, de óculos e blazer escuro."
+                  data-i18n-alt="hero.photo-alt"
                   fetchpriority="high"
                 />
               </div>
               <figcaption class="photo-caption">
-                <strong>Curiosidade para entender.</strong
-                ><span>Código para construir. ↗</span>
+                <strong data-i18n="hero.caption-1"
+                  >Curiosidade para entender.</strong
+                ><span data-i18n="hero.caption-2">Código para construir. ↗</span>
               </figcaption>
             </figure>
             <div class="hero-copy">
-              <p class="eyebrow">Engenharia de dados & desenvolvimento</p>
+              <p class="eyebrow" data-i18n="hero.copy-eyebrow">
+                Engenharia de dados & desenvolvimento
+              </p>
               <p class="small-name">Anahi Narieli<br />Guarachi Mamani</p>
-              <p class="intro">
+              <p class="intro" data-i18n="hero.intro">
                 Estudante de Desenvolvimento de Software Multiplataforma e
                 estagiária em Engenharia de Dados na IBM. Exploro como
                 aplicações, bancos de dados e pipelines se conectam.
               </p>
               <div class="actions">
-                <a class="button" href="#projetos"
+                <a class="button" href="#projetos" data-i18n="hero.cta-projects"
                   >Conheça meus projetos <span aria-hidden="true">↘</span></a
-                ><a class="text-link" href="#sobre">Mais sobre mim ↓</a>
+                ><a class="text-link" href="#sobre" data-i18n="hero.cta-about"
+                  >Mais sobre mim ↓</a
+                >
               </div>
               <div class="hero-social">
                 <a href="https://github.com/AnahiMamani">GitHub ↗</a
@@ -90,22 +132,40 @@
               </div>
             </div>
           </div>
+          <div class="hero-words" aria-hidden="true">
+            <span>Portfólio</span
+            ><span class="w-outline">Portfólio</span
+            ><span class="w-outline">Portfólio</span>
+          </div>
         </div>
+        <a
+          class="scroll-badge"
+          href="#sobre"
+          aria-label="Rolar para Sobre mim"
+          data-i18n-aria="hero.scroll-aria"
+          ><span class="scroll-circle" aria-hidden="true">↓</span
+          ><span class="scroll-text" data-i18n="hero.scroll">Scroll down</span></a
+        >
         <div class="hero-ribbon">
           <div class="container ribbon-inner">
-            <span>Engenharia de dados</span
+            <span data-i18n="hero.ribbon-1">Engenharia de dados</span
             ><span class="star" aria-hidden="true">✦</span
-            ><span>Desenvolvimento de software</span
+            ><span data-i18n="hero.ribbon-2">Desenvolvimento de software</span
             ><span class="star" aria-hidden="true">✦</span
-            ><span class="ribbon-last">Aprendizado na prática</span>
+            ><span class="ribbon-last" data-i18n="hero.ribbon-3"
+              >Aprendizado na prática</span
+            >
           </div>
         </div>
       </section>
       <section class="section" id="sobre" aria-labelledby="sobre-title">
+        <p class="section-word" aria-hidden="true" data-i18n="word.sobre">
+          Sobre
+        </p>
         <div class="container about-grid">
           <div>
-            <p class="eyebrow">01 / Sobre mim</p>
-            <h2 id="sobre-title">
+            <p class="eyebrow" data-i18n="about.eyebrow">01 / Sobre mim</p>
+            <h2 id="sobre-title" data-i18n="about.title">
               Entre o dado<br />e a solução<span
                 class="star"
                 aria-hidden="true"
@@ -115,17 +175,17 @@
             </h2>
           </div>
           <div class="about-body">
-            <p>
+            <p data-i18n="about.p1">
               Gosto de entender o caminho completo: da aplicação que gera um
               dado ao processo que transforma esse dado em informação útil.
             </p>
-            <p class="muted">
+            <p class="muted" data-i18n="about.p2">
               Minha formação combina desenvolvimento de software, bancos de
               dados e projetos em equipe. Hoje, meu foco está em engenharia de
               dados, cloud e pipelines, com interesse também em backend e
               arquitetura de sistemas.
             </p>
-            <p class="muted">
+            <p class="muted" data-i18n="about.p3">
               Nos projetos em equipe, também assumo a organização do trabalho:
               facilito reuniões, acompanho o backlog e ajudo a transformar
               requisitos em entregas por sprint. Desde o Peregrine, atuo como
@@ -133,16 +193,16 @@
             </p>
             <div class="about-bottom">
               <div>
-                <h3>Como trabalho</h3>
-                <p>
+                <h3 data-i18n="about.how">Como trabalho</h3>
+                <p data-i18n="about.how-p">
                   Modelagem de dados, backend e organização do trabalho com
                   Scrum: backlog, sprints, documentação e acompanhamento das
                   entregas.
                 </p>
               </div>
               <div>
-                <h3>Além do código</h3>
-                <p>
+                <h3 data-i18n="about.beyond">Além do código</h3>
+                <p data-i18n="about.beyond-p">
                   Desenho, livros, videogames e RPG de mesa também fazem parte
                   do meu repertório.
                 </p>
@@ -156,13 +216,20 @@
         id="projetos"
         aria-labelledby="projetos-title"
       >
+        <p class="section-word" aria-hidden="true" data-i18n="word.projetos">
+          Projetos
+        </p>
         <div class="container">
           <div class="section-heading">
             <div>
-              <p class="eyebrow">02 / Projetos acadêmicos</p>
-              <h2 id="projetos-title">Uma trajetória em projetos.</h2>
+              <p class="eyebrow" data-i18n="projects.eyebrow">
+                02 / Projetos acadêmicos
+              </p>
+              <h2 id="projetos-title" data-i18n="projects.title">
+                Uma trajetória em projetos.
+              </h2>
             </div>
-            <p class="muted">
+            <p class="muted" data-i18n="projects.muted">
               Do primeiro protótipo à aplicação multiplataforma: seis semestres
               construindo soluções em equipe.
             </p>
@@ -171,15 +238,36 @@
             class="filters"
             role="group"
             aria-label="Filtrar projetos acadêmicos"
+            data-i18n-aria="projects.filters-aria"
             hidden
           >
-            <button type="button" data-filter="todos" aria-pressed="true">
+            <button
+              type="button"
+              data-filter="todos"
+              aria-pressed="true"
+              data-i18n="filter.all"
+            >
               Todos</button
-            ><button type="button" data-filter="web" aria-pressed="false">
+            ><button
+              type="button"
+              data-filter="web"
+              aria-pressed="false"
+              data-i18n="filter.web"
+            >
               Web</button
-            ><button type="button" data-filter="mobile" aria-pressed="false">
+            ><button
+              type="button"
+              data-filter="mobile"
+              aria-pressed="false"
+              data-i18n="filter.mobile"
+            >
               Mobile</button
-            ><button type="button" data-filter="desktop" aria-pressed="false">
+            ><button
+              type="button"
+              data-filter="desktop"
+              aria-pressed="false"
+              data-i18n="filter.desktop"
+            >
               Desktop
             </button>
           </div>
@@ -190,26 +278,30 @@
                 class="project-cover"
                 href="projetos/supervalido.html"
                 aria-label="Conhecer Super Válido"
+                data-i18n-aria="sv.cover-aria"
                 ><img
-                  src="assets/projects/supervalido/cover.jpg"
-                  alt="Capa do projeto Super Válido"
-                  width="1920"
-                  height="1080"
+                  src="assets/projects/supervalido/01.webp"
+                  alt="Tela inicial do Super Válido com menu de categorias e banner de ofertas."
+                  data-i18n-alt="sv.cover-alt"
+                  width="1890"
+                  height="943"
                   loading="lazy"
               /></a>
               <div class="project-badges">
-                <span>1º semestre · 2024</span
-                ><span class="status">Protótipo concluído</span>
+                <span data-i18n="sv.badge-1">1º semestre · 2024</span
+                ><span class="status" data-i18n="sv.badge-2"
+                  >Protótipo concluído</span
+                >
               </div>
               <h3>
                 <a href="projetos/supervalido.html">Super Válido</a
                 ><span class="arrow" aria-hidden="true">↗</span>
               </h3>
-              <p>
+              <p data-i18n="sv.desc">
                 Ofertas de alimentos próximos ao vencimento para aproximar
                 supermercados e consumidores.
               </p>
-              <p class="card-role">
+              <p class="card-role" data-i18n="sv.role">
                 Minha atuação: Planejamento técnico & organização
               </p>
               <ul class="tags">
@@ -217,7 +309,10 @@
                 <li>CSS</li>
                 <li>JavaScript</li>
               </ul>
-              <a class="text-link" href="projetos/supervalido.html"
+              <a
+                class="text-link"
+                href="projetos/supervalido.html"
+                data-i18n="card.view"
                 >Ver projeto <span aria-hidden="true">→</span></a
               >
             </article>
@@ -226,26 +321,28 @@
                 class="project-cover"
                 href="projetos/peregrine.html"
                 aria-label="Conhecer Peregrine"
+                data-i18n-aria="pg.cover-aria"
                 ><img
-                  src="assets/projects/peregrine/cover.jpg"
-                  alt="Capa do projeto Peregrine"
-                  width="1920"
-                  height="1080"
+                  src="assets/projects/peregrine/01.webp"
+                  alt="Página inicial do Peregrine com chamada para planejamento de viagens."
+                  data-i18n-alt="pg.cover-alt"
+                  width="1440"
+                  height="1024"
                   loading="lazy"
               /></a>
               <div class="project-badges">
-                <span>2º semestre · 2024</span
-                ><span class="status">Concluído</span>
+                <span data-i18n="pg.badge-1">2º semestre · 2024</span
+                ><span class="status" data-i18n="pg.badge-2">Concluído</span>
               </div>
               <h3>
                 <a href="projetos/peregrine.html">Peregrine</a
                 ><span class="arrow" aria-hidden="true">↗</span>
               </h3>
-              <p>
+              <p data-i18n="pg.desc">
                 Planejamento de viagens para mulheres que querem viajar com
                 outras mulheres.
               </p>
-              <p class="card-role">
+              <p class="card-role" data-i18n="pg.role">
                 Minha atuação: Backend, banco de dados & Scrum
               </p>
               <ul class="tags">
@@ -253,7 +350,10 @@
                 <li>Node.js</li>
                 <li>Express</li>
               </ul>
-              <a class="text-link" href="projetos/peregrine.html"
+              <a
+                class="text-link"
+                href="projetos/peregrine.html"
+                data-i18n="card.view"
                 >Ver projeto <span aria-hidden="true">→</span></a
               >
             </article>
@@ -262,26 +362,28 @@
                 class="project-cover"
                 href="projetos/seren.html"
                 aria-label="Conhecer Seren"
+                data-i18n-aria="se.cover-aria"
                 ><img
-                  src="assets/projects/seren/cover.jpg"
-                  alt="Capa do projeto Seren"
-                  width="1920"
-                  height="1080"
+                  src="assets/projects/seren/01.webp"
+                  alt="Página inicial do Seren com a proposta de organizar agendamentos."
+                  data-i18n-alt="se.cover-alt"
+                  width="1350"
+                  height="642"
                   loading="lazy"
               /></a>
               <div class="project-badges">
-                <span>3º semestre · 2025</span
-                ><span class="status">Concluído</span>
+                <span data-i18n="se.badge-1">3º semestre · 2025</span
+                ><span class="status" data-i18n="se.badge-2">Concluído</span>
               </div>
               <h3>
                 <a href="projetos/seren.html">Seren</a
                 ><span class="arrow" aria-hidden="true">↗</span>
               </h3>
-              <p>
+              <p data-i18n="se.desc">
                 Agendamentos, pacientes e pagamentos reunidos para apoiar a
                 rotina de psicólogos.
               </p>
-              <p class="card-role">
+              <p class="card-role" data-i18n="se.role">
                 Minha atuação: Backend, banco de dados & Scrum
               </p>
               <ul class="tags">
@@ -289,7 +391,10 @@
                 <li>Node.js</li>
                 <li>Express</li>
               </ul>
-              <a class="text-link" href="projetos/seren.html"
+              <a
+                class="text-link"
+                href="projetos/seren.html"
+                data-i18n="card.view"
                 >Ver projeto <span aria-hidden="true">→</span></a
               >
             </article>
@@ -298,66 +403,80 @@
                 class="project-cover"
                 href="projetos/pindorama.html"
                 aria-label="Conhecer Pindorama"
+                data-i18n-aria="pi.cover-aria"
                 ><img
-                  src="assets/projects/pindorama/cover.jpg"
-                  alt="Capa do projeto Pindorama"
-                  width="1920"
-                  height="1080"
+                  src="assets/projects/pindorama/01.webp"
+                  alt="Página inicial do Pindorama com destaque para o Bumba-meu-boi."
+                  data-i18n-alt="pi.cover-alt"
+                  width="1918"
+                  height="910"
                   loading="lazy"
               /></a>
               <div class="project-badges">
-                <span>4º semestre · 2025</span
-                ><span class="status">Concluído</span>
+                <span data-i18n="pi.badge-1">4º semestre · 2025</span
+                ><span class="status" data-i18n="pi.badge-2">Concluído</span>
               </div>
               <h3>
                 <a href="projetos/pindorama.html">Pindorama</a
                 ><span class="arrow" aria-hidden="true">↗</span>
               </h3>
-              <p>
+              <p data-i18n="pi.desc">
                 Artigos, eventos e imagens para conhecer o patrimônio cultural
                 imaterial brasileiro.
               </p>
-              <p class="card-role">Minha atuação: API, integrações & Scrum</p>
+              <p class="card-role" data-i18n="pi.role">
+                Minha atuação: API, integrações & Scrum
+              </p>
               <ul class="tags">
                 <li>Ruby</li>
                 <li>Ruby on Rails</li>
                 <li>PostgreSQL</li>
               </ul>
-              <a class="text-link" href="projetos/pindorama.html"
+              <a
+                class="text-link"
+                href="projetos/pindorama.html"
+                data-i18n="card.view"
                 >Ver projeto <span aria-hidden="true">→</span></a
               >
             </article>
             <article class="project-card" data-category="mobile desktop">
               <a
-                class="project-cover"
+                class="project-cover phone"
                 href="projetos/poupas.html"
                 aria-label="Conhecer Poupas"
+                data-i18n-aria="po.cover-aria"
                 ><img
-                  src="assets/projects/poupas/cover.jpg"
-                  alt="Capa do projeto Poupas"
-                  width="1920"
-                  height="1080"
+                  src="assets/projects/poupas/01.webp"
+                  alt="Tela de boas-vindas do aplicativo Poupas."
+                  data-i18n-alt="po.cover-alt"
+                  width="380"
+                  height="846"
                   loading="lazy"
               /></a>
               <div class="project-badges">
-                <span>5º semestre · 2026</span
-                ><span class="status">Concluído</span>
+                <span data-i18n="po.badge-1">5º semestre · 2026</span
+                ><span class="status" data-i18n="po.badge-2">Concluído</span>
               </div>
               <h3>
                 <a href="projetos/poupas.html">Poupas</a
                 ><span class="arrow" aria-hidden="true">↗</span>
               </h3>
-              <p>
+              <p data-i18n="po.desc">
                 Educação financeira para o público infantojuvenil, com lições e
                 recursos de gamificação.
               </p>
-              <p class="card-role">Minha atuação: Frontend Flutter & Scrum</p>
+              <p class="card-role" data-i18n="po.role">
+                Minha atuação: Frontend Flutter & Scrum
+              </p>
               <ul class="tags">
                 <li>Flutter</li>
                 <li>Dart</li>
                 <li>Git</li>
               </ul>
-              <a class="text-link" href="projetos/poupas.html"
+              <a
+                class="text-link"
+                href="projetos/poupas.html"
+                data-i18n="card.view"
                 >Ver projeto <span aria-hidden="true">→</span></a
               >
             </article>
@@ -366,8 +485,10 @@
                 class="project-cover"
                 href="projetos/greenhouse.html"
                 aria-label="Conhecer Greenhouse"
+                data-i18n-aria="gh.cover-aria"
                 ><div class="greenhouse-cover">
-                  <span class="eyebrow">Cultivar · Organizar · Conectar</span
+                  <span class="eyebrow" data-i18n="gh.cover-eyebrow"
+                    >Cultivar · Organizar · Conectar</span
                   ><svg
                     viewBox="0 0 120 110"
                     width="110"
@@ -381,22 +502,24 @@
                       stroke-width="3"
                     /></svg
                   ><strong>Greenhouse</strong
-                  ><span>Gestão de floricultura</span>
+                  ><span data-i18n="gh.cover-sub">Gestão de floricultura</span>
                 </div></a
               >
               <div class="project-badges">
-                <span>6º semestre · 2026</span
-                ><span class="status in-progress">Em desenvolvimento</span>
+                <span data-i18n="gh.badge-1">6º semestre · 2026</span
+                ><span class="status in-progress" data-i18n="gh.badge-2"
+                  >Em desenvolvimento</span
+                >
               </div>
               <h3>
                 <a href="projetos/greenhouse.html">Greenhouse</a
                 ><span class="arrow" aria-hidden="true">↗</span>
               </h3>
-              <p>
+              <p data-i18n="gh.desc">
                 Gestão de floricultura em uma aplicação multiplataforma,
                 atualmente em desenvolvimento.
               </p>
-              <p class="card-role">
+              <p class="card-role" data-i18n="gh.role">
                 Minha atuação: Banco de dados, backend & Scrum
               </p>
               <ul class="tags">
@@ -404,16 +527,19 @@
                 <li>Spring Boot</li>
                 <li>PostgreSQL</li>
               </ul>
-              <a class="text-link" href="projetos/greenhouse.html"
+              <a
+                class="text-link"
+                href="projetos/greenhouse.html"
+                data-i18n="card.view"
                 >Ver projeto <span aria-hidden="true">→</span></a
               >
             </article>
           </div>
           <details class="other-projects">
-            <summary>
+            <summary data-i18n="others.summary">
               Outros projetos e estudos <span aria-hidden="true">+</span>
             </summary>
-            <p class="muted">
+            <p class="muted" data-i18n="others.muted">
               Projetos adicionais, fora da sequência dos seis semestres.
             </p>
             <div class="project-grid">
@@ -422,23 +548,30 @@
                   class="project-cover"
                   href="projetos/pipeline-medallion.html"
                   aria-label="Conhecer SQL Server → BigQuery"
+                  data-i18n-aria="pl.cover-aria"
                   ><div class="cover-art pipeline">
-                    <span>Engenharia de dados</span
-                    ><strong>Da origem<br />à análise.</strong>
+                    <span data-i18n="pl.cover-tag">Engenharia de dados</span
+                    ><strong data-i18n="pl.cover-title"
+                      >Da origem<br />à análise.</strong
+                    >
                     <div class="pipeline-route">
                       <i>SQL Server</i><b aria-hidden="true">→</b><i>BigQuery</i
                       ><b aria-hidden="true">→</b><i>Dataform</i>
                     </div>
                   </div>
-                  <span class="cover-label">Fluxo do projeto</span></a
+                  <span class="cover-label" data-i18n="pl.cover-label"
+                    >Fluxo do projeto</span
+                  ></a
                 >
-                <p class="project-meta">Engenharia de dados · Cloud</p>
+                <p class="project-meta" data-i18n="pl.meta">
+                  Engenharia de dados · Cloud
+                </p>
                 <h3>
                   <a href="projetos/pipeline-medallion.html"
                     >SQL Server → BigQuery</a
                   ><span class="arrow" aria-hidden="true">↗</span>
                 </h3>
-                <p>
+                <p data-i18n="pl.desc">
                   Ingestão incremental e transformação de dados em uma
                   arquitetura Medallion.
                 </p>
@@ -447,7 +580,10 @@
                   <li>SQL Server</li>
                   <li>BigQuery</li>
                 </ul>
-                <a class="text-link" href="projetos/pipeline-medallion.html"
+                <a
+                  class="text-link"
+                  href="projetos/pipeline-medallion.html"
+                  data-i18n="card.view"
                   >Ver projeto <span aria-hidden="true">→</span></a
                 >
               </article>
@@ -456,20 +592,26 @@
                   class="project-cover phone"
                   href="projetos/connectstudents.html"
                   aria-label="Conhecer ConnectStudents"
+                  data-i18n-aria="cs.cover-aria"
                   ><img
                     src="assets/projects/connectstudents-feed.png"
                     alt="Registro da interface do ConnectStudents preservado no repositório do projeto."
+                    data-i18n-alt="cs.cover-alt"
                     width="1440"
                     height="960"
                     loading="lazy"
-                  /><span class="cover-label">Interface do projeto</span></a
+                  /><span class="cover-label" data-i18n="cs.cover-label"
+                    >Interface do projeto</span
+                  ></a
                 >
-                <p class="project-meta">Aplicativo Android · Educação</p>
+                <p class="project-meta" data-i18n="cs.meta">
+                  Aplicativo Android · Educação
+                </p>
                 <h3>
                   <a href="projetos/connectstudents.html">ConnectStudents</a
                   ><span class="arrow" aria-hidden="true">↗</span>
                 </h3>
-                <p>
+                <p data-i18n="cs.desc">
                   Comunicação entre estudantes, professores e a instituição de
                   ensino.
                 </p>
@@ -478,7 +620,10 @@
                   <li>Android Studio</li>
                   <li>Firebase</li>
                 </ul>
-                <a class="text-link" href="projetos/connectstudents.html"
+                <a
+                  class="text-link"
+                  href="projetos/connectstudents.html"
+                  data-i18n="card.view"
                   >Ver projeto <span aria-hidden="true">→</span></a
                 >
               </article>
@@ -487,20 +632,26 @@
                   class="project-cover"
                   href="projetos/rosycoffee.html"
                   aria-label="Conhecer Rosycoffee"
+                  data-i18n-aria="rc.cover-aria"
                   ><img
                     src="assets/projects/rosycoffee.png"
                     alt="Página inicial da Rosycoffee com cardápio e composição de fotografias."
+                    data-i18n-alt="rc.cover-alt"
                     width="1440"
                     height="960"
                     loading="lazy"
-                  /><span class="cover-label">Interface do projeto</span></a
+                  /><span class="cover-label" data-i18n="rc.cover-label"
+                    >Interface do projeto</span
+                  ></a
                 >
-                <p class="project-meta">Website · Cafeteria</p>
+                <p class="project-meta" data-i18n="rc.meta">
+                  Website · Cafeteria
+                </p>
                 <h3>
                   <a href="projetos/rosycoffee.html">Rosycoffee</a
                   ><span class="arrow" aria-hidden="true">↗</span>
                 </h3>
-                <p>
+                <p data-i18n="rc.desc">
                   Uma landing page que apresenta o cardápio e a atmosfera de uma
                   cafeteria.
                 </p>
@@ -508,7 +659,10 @@
                   <li>HTML</li>
                   <li>CSS</li>
                 </ul>
-                <a class="text-link" href="projetos/rosycoffee.html"
+                <a
+                  class="text-link"
+                  href="projetos/rosycoffee.html"
+                  data-i18n="card.view"
                   >Ver projeto <span aria-hidden="true">→</span></a
                 >
               </article>
@@ -517,20 +671,26 @@
                   class="project-cover"
                   href="projetos/petcare.html"
                   aria-label="Conhecer PetCare"
+                  data-i18n-aria="pc.cover-aria"
                   ><img
                     src="assets/projects/petcare.png"
                     alt="Página inicial do PetCare, com apresentação dos serviços para animais."
+                    data-i18n-alt="pc.cover-alt"
                     width="1440"
                     height="960"
                     loading="lazy"
-                  /><span class="cover-label">Interface do projeto</span></a
+                  /><span class="cover-label" data-i18n="pc.cover-label"
+                    >Interface do projeto</span
+                  ></a
                 >
-                <p class="project-meta">Website · Cuidados com animais</p>
+                <p class="project-meta" data-i18n="pc.meta">
+                  Website · Cuidados com animais
+                </p>
                 <h3>
                   <a href="projetos/petcare.html">PetCare</a
                   ><span class="arrow" aria-hidden="true">↗</span>
                 </h3>
-                <p>
+                <p data-i18n="pc.desc">
                   Uma proposta para aproximar tutores de animais e cuidadores.
                 </p>
                 <ul class="tags">
@@ -538,7 +698,10 @@
                   <li>CSS</li>
                   <li>JavaScript</li>
                 </ul>
-                <a class="text-link" href="projetos/petcare.html"
+                <a
+                  class="text-link"
+                  href="projetos/petcare.html"
+                  data-i18n="card.view"
                   >Ver projeto <span aria-hidden="true">→</span></a
                 >
               </article>
@@ -551,51 +714,68 @@
         id="trajetoria"
         aria-labelledby="trajetoria-title"
       >
+        <p class="section-word" aria-hidden="true" data-i18n="word.traj">
+          Trajetória
+        </p>
         <div class="container">
           <div class="section-heading">
             <div>
-              <p class="eyebrow">03 / Trajetória</p>
-              <h2 id="trajetoria-title">Aprender. Aplicar. Evoluir.</h2>
+              <p class="eyebrow" data-i18n="traj.eyebrow">03 / Trajetória</p>
+              <h2 id="trajetoria-title" data-i18n="traj.title">
+                Aprender. Aplicar. Evoluir.
+              </h2>
             </div>
-            <p class="muted">
+            <p class="muted" data-i18n="traj.muted">
               A formação técnica, os projetos em grupo e a experiência
               profissional se encontram aqui.
             </p>
           </div>
           <div class="trajectory-grid">
             <div>
-              <h3 class="column-title">Formação</h3>
+              <h3 class="column-title" data-i18n="traj.col-edu">Formação</h3>
               <article class="timeline-item">
-                <p class="date">2024 / 1º semestre → 2026</p>
+                <p class="date" data-i18n="traj.edu1-date">
+                  2024 / 1º semestre → 2026
+                </p>
                 <h4>Fatec Zona Leste</h4>
-                <p class="role">
+                <p class="role" data-i18n="traj.edu1-role">
                   Tecnologia em Desenvolvimento de Software Multiplataforma
                 </p>
-                <p>
+                <p data-i18n="traj.edu1-p">
                   Início em fevereiro de 2024. Previsão de conclusão em dezembro
                   de 2026.
                 </p>
               </article>
               <article class="timeline-item">
-                <p class="date">Julho de 2022 → Novembro de 2023</p>
+                <p class="date" data-i18n="traj.edu2-date">
+                  Julho de 2022 → Novembro de 2023
+                </p>
                 <h4>ETEC</h4>
-                <p class="role">Técnico em Desenvolvimento de Sistemas</p>
-                <p>Formação técnica em desenvolvimento de sistemas.</p>
+                <p class="role" data-i18n="traj.edu2-role">
+                  Técnico em Desenvolvimento de Sistemas
+                </p>
+                <p data-i18n="traj.edu2-p">
+                  Formação técnica em desenvolvimento de sistemas.
+                </p>
               </article>
             </div>
             <div>
-              <h3 class="column-title">Experiência</h3>
+              <h3 class="column-title" data-i18n="traj.col-exp">Experiência</h3>
               <article class="timeline-item">
-                <p class="date">Novembro de 2025 → Atual</p>
+                <p class="date" data-i18n="traj.exp1-date">
+                  Novembro de 2025 → Atual
+                </p>
                 <h4>IBM</h4>
-                <p class="role">Estagiária em Engenharia de Dados</p>
-                <p>
+                <p class="role" data-i18n="traj.exp1-role">
+                  Estagiária em Engenharia de Dados
+                </p>
+                <p data-i18n="traj.exp1-p1">
                   Desenvolvimento e manutenção de pipelines com Python, SQL e
                   PySpark, com apoio em modelagem de dados, integração entre
                   sistemas e uso de Google Cloud para processamento e
                   armazenamento.
                 </p>
-                <p>
+                <p data-i18n="traj.exp1-p2">
                   Desde março de 2026, atuação no projeto Data Recovery (Vale):
                   governança e padronização de dados históricos, migração e
                   versionamento de código no Azure DevOps e preparação de
@@ -603,10 +783,12 @@
                 </p>
               </article>
               <article class="timeline-item">
-                <p class="date">Março de 2023 → Julho de 2023</p>
+                <p class="date" data-i18n="traj.exp2-date">
+                  Março de 2023 → Julho de 2023
+                </p>
                 <h4>Colégio Suller Garcia</h4>
-                <p class="role">Técnica em TI</p>
-                <p>
+                <p class="role" data-i18n="traj.exp2-role">Técnica em TI</p>
+                <p data-i18n="traj.exp2-p">
                   Manutenção da infraestrutura de TI em três prédios: redes
                   Wi-Fi, computadores, projetores e dispositivos eletrônicos.
                   Apoio pedagógico em Mecatrônica com lógica de programação em
@@ -623,13 +805,20 @@
         id="tecnologias"
         aria-labelledby="tecnologias-title"
       >
+        <p class="section-word" aria-hidden="true" data-i18n="word.tech">
+          Tecnologias
+        </p>
         <div class="container">
           <div class="section-heading">
             <div>
-              <p class="eyebrow">04 / Ferramentas & tecnologias</p>
-              <h2 id="tecnologias-title">Meu repertório técnico.</h2>
+              <p class="eyebrow" data-i18n="skills.eyebrow">
+                04 / Ferramentas & tecnologias
+              </p>
+              <h2 id="tecnologias-title" data-i18n="skills.title">
+                Meu repertório técnico.
+              </h2>
             </div>
-            <p class="muted">
+            <p class="muted" data-i18n="skills.muted">
               Tecnologias presentes na minha formação, no meu perfil
               profissional e nos projetos.
             </p>
@@ -637,23 +826,31 @@
           <div class="skills-grid">
             <article class="skill-group">
               <p class="skill-number">01 /</p>
-              <h3>Dados & bancos</h3>
-              <p>Python, PySpark, SQL, PostgreSQL, SQL Server e BigQuery.</p>
+              <h3 data-i18n="skills.g1-h">Dados & bancos</h3>
+              <p data-i18n="skills.g1-p">
+                Python, PySpark, SQL, PostgreSQL, SQL Server e BigQuery.
+              </p>
             </article>
             <article class="skill-group">
               <p class="skill-number">02 /</p>
-              <h3>Web & backend</h3>
-              <p>HTML, CSS, JavaScript, Node.js, Ruby e Ruby on Rails.</p>
+              <h3 data-i18n="skills.g2-h">Web & backend</h3>
+              <p data-i18n="skills.g2-p">
+                HTML, CSS, JavaScript, Node.js, Ruby e Ruby on Rails.
+              </p>
             </article>
             <article class="skill-group">
               <p class="skill-number">03 /</p>
-              <h3>Mobile</h3>
-              <p>Kotlin Multiplatform, Flutter, Dart e Android Studio.</p>
+              <h3 data-i18n="skills.g3-h">Mobile</h3>
+              <p data-i18n="skills.g3-p">
+                Kotlin Multiplatform, Flutter, Dart e Android Studio.
+              </p>
             </article>
             <article class="skill-group">
               <p class="skill-number">04 /</p>
-              <h3>Cloud & ferramentas</h3>
-              <p>Google Cloud, Docker, Git, GitHub, Jira e Figma.</p>
+              <h3 data-i18n="skills.g4-h">Cloud & ferramentas</h3>
+              <p data-i18n="skills.g4-p">
+                Google Cloud, Docker, Git, GitHub, Jira e Figma.
+              </p>
             </article>
           </div>
         </div>
@@ -665,8 +862,12 @@
       >
         <div class="container learning-grid">
           <div>
-            <p class="eyebrow">05 / Aprendizado contínuo</p>
-            <h2 id="aprendizado-title">Cursos & certificações.</h2>
+            <p class="eyebrow" data-i18n="learn.eyebrow">
+              05 / Aprendizado contínuo
+            </p>
+            <h2 id="aprendizado-title" data-i18n="learn.title">
+              Cursos & certificações.
+            </h2>
             <ul class="course-list">
               <li>
                 <span>01</span>
@@ -712,8 +913,10 @@
               </li>
             </ul>
             <details>
-              <summary>Outros cursos e treinamentos</summary>
-              <p>
+              <summary data-i18n="learn.details">
+                Outros cursos e treinamentos
+              </summary>
+              <p data-i18n="learn.details-p">
                 Data Engineering with Python and SQL, Data Modeling and
                 Relational Database e Data Warehouse Concepts, registrados no
                 meu perfil profissional. As cargas horárias e datas exatas
@@ -722,23 +925,27 @@
             </details>
           </div>
           <div>
-            <p class="eyebrow">06 / Conexões</p>
-            <h2>Idiomas.</h2>
+            <p class="eyebrow" data-i18n="lang.eyebrow">06 / Conexões</p>
+            <h2 data-i18n="lang.title">Idiomas.</h2>
             <dl class="language-list">
               <div>
-                <dt>Português</dt>
-                <dd>Nativo ou bilíngue</dd>
+                <dt data-i18n="lang.pt">Português</dt>
+                <dd data-i18n="lang.pt-lvl">Nativo ou bilíngue</dd>
               </div>
               <div>
-                <dt>Espanhol</dt>
-                <dd>Proficiência profissional completa</dd>
+                <dt data-i18n="lang.es">Espanhol</dt>
+                <dd data-i18n="lang.es-lvl">
+                  Proficiência profissional completa
+                </dd>
               </div>
               <div>
-                <dt>Inglês</dt>
-                <dd>Proficiência profissional limitada</dd>
+                <dt data-i18n="lang.en">Inglês</dt>
+                <dd data-i18n="lang.en-lvl">
+                  Proficiência profissional limitada
+                </dd>
               </div>
             </dl>
-            <p class="personal-note">
+            <p class="personal-note" data-i18n="lang.note">
               <span class="star" aria-hidden="true">✦</span> Diferentes
               linguagens, novas formas de entender o mundo.
             </p>
@@ -750,9 +957,9 @@
       <div class="container">
         <div class="footer-top">
           <div>
-            <p class="eyebrow">Contato</p>
-            <h2>Vamos trocar ideias?</h2>
-            <p>
+            <p class="eyebrow" data-i18n="footer.eyebrow">Contato</p>
+            <h2 data-i18n="footer.title">Vamos trocar ideias?</h2>
+            <p data-i18n="footer.p">
               Sobre dados, desenvolvimento de software e os caminhos entre essas
               duas áreas.
             </p>
@@ -770,9 +977,11 @@
         </div>
         <div class="footer-bottom">
           <span>© 2026 Anahi Narieli Guarachi Mamani</span
-          ><a href="https://github.com/AnahiMamani/Portifolio"
+          ><a
+            href="https://github.com/AnahiMamani/Portifolio"
+            data-i18n="footer.code"
             >Código deste portfólio ↗</a
-          ><a href="#conteudo">Voltar ao início ↑</a>
+          ><a href="#conteudo" data-i18n="footer.top">Voltar ao início ↑</a>
         </div>
       </div>
     </footer>

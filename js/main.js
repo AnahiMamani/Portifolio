@@ -5,7 +5,9 @@ const navigation = document.querySelector("#site-nav");
 if (menuButton && navigation) {
   const setMenu = (open) => {
     menuButton.setAttribute("aria-expanded", String(open));
-    menuButton.textContent = open ? "Fechar ×" : "Menu +";
+    const key = open ? "nav.menu.close" : "nav.menu.open";
+    menuButton.textContent =
+      (window.i18n && window.i18n.t(key)) || (open ? "Fechar ×" : "Menu +");
     navigation.classList.toggle("is-open", open);
   };
   menuButton.addEventListener("click", () =>
@@ -32,6 +34,17 @@ if (filterBar) {
   filterBar.hidden = false;
   const cards = [...document.querySelectorAll("#academic-grid .project-card")];
   const status = document.querySelector(".filter-status");
+  const updateStatus = () => {
+    const count = cards.filter((card) => !card.hidden).length;
+    status.hidden = false;
+    const key = count === 1 ? "filter.status-1" : "filter.status";
+    status.textContent =
+      (window.i18n && window.i18n.t(key)?.replace("{n}", count)) ||
+      `${count} ${count === 1 ? "projeto exibido" : "projetos exibidos"}.`;
+  };
+  document.addEventListener("i18n:changed", () => {
+    if (!status.hidden) updateStatus();
+  });
   filterBar.addEventListener("click", (event) => {
     const button = event.target.closest("button[data-filter]");
     if (!button) return;
@@ -40,15 +53,12 @@ if (filterBar) {
       .forEach((item) =>
         item.setAttribute("aria-pressed", String(item === button)),
       );
-    let count = 0;
     cards.forEach((card) => {
       card.hidden =
         button.dataset.filter !== "todos" &&
         !card.dataset.category.split(" ").includes(button.dataset.filter);
-      if (!card.hidden) count++;
     });
-    status.hidden = false;
-    status.textContent = `${count} ${count === 1 ? "projeto exibido" : "projetos exibidos"}.`;
+    updateStatus();
   });
 }
 

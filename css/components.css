@@ -38,6 +38,27 @@
   padding: 0.25rem 1.25rem;
   border-radius: 99px;
 }
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #65735e;
+  border-radius: 99px;
+  overflow: hidden;
+}
+.lang-switch button {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  min-height: 44px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.lang-switch button[aria-pressed="true"] {
+  background: var(--color-yellow);
+  color: var(--color-black);
+}
 .menu-toggle {
   display: none;
   border: 1px solid currentColor;

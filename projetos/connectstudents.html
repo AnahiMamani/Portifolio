@@ -7,6 +7,8 @@
     <meta
       name="description"
       content="Comunicação entre estudantes, professores e a instituição de ensino."
+    
+      data-i18n-content="cs.meta.description"
     />
     <title>ConnectStudents · Anahi Narieli</title>
     <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
@@ -15,16 +17,17 @@
     <link rel="stylesheet" href="../css/components.css" />
     <link rel="stylesheet" href="../css/project.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
+    <script src="../js/i18n.js" defer></script>
     <script src="../js/main.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <a class="skip-link" href="#conteudo" data-i18n="nav.skip">Pular para o conteúdo</a>
     <header class="site-header dark">
       <div class="container header-inner">
         <a
           class="brand"
           href="../index.html"
-          aria-label="Anahi Narieli — página inicial"
+          aria-label="Anahi Narieli — página inicial" data-i18n-aria="nav.brand-aria"
           ><span class="star" aria-hidden="true">✦</span> Anahi Narieli</a
         ><button
           class="menu-toggle"
@@ -34,11 +37,9 @@
         >
           Menu +
         </button>
-        <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
-          <a href="../index.html#sobre">Sobre mim</a
-          ><a href="../index.html#projetos">Projetos</a
-          ><a href="../index.html#trajetoria">Trajetória</a
-          ><a class="nav-contact" href="#contato">Vamos conversar ↗</a>
+        <nav class="site-nav" id="site-nav" aria-label="Navegação principal" data-i18n-aria="nav.main">
+          <a href="../index.html#sobre" data-i18n="nav.about">Sobre mim</a><a href="../index.html#projetos" data-i18n="nav.projects">Projetos</a><a href="../index.html#trajetoria" data-i18n="nav.trajectory">Trajetória</a><a class="nav-contact" href="#contato" data-i18n="nav.contact">Vamos conversar ↗</a>
+        <span class="lang-switch" role="group" aria-label="Idioma" data-i18n-aria="nav.lang"><button type="button" data-lang="pt" aria-pressed="true">PT</button><button type="button" data-lang="en" aria-pressed="false">EN</button><button type="button" data-lang="es" aria-pressed="false">ES</button></span>
         </nav>
       </div>
     </header>
@@ -46,11 +47,10 @@
       <section class="case-hero dark">
         <div class="container">
           <a class="breadcrumb" href="../index.html#projetos"
-            >← Todos os projetos</a
-          >
+             data-i18n="case.back">← Todos os projetos</a>
           <div class="case-heading">
             <div>
-              <p class="eyebrow">Aplicativo Android · Educação</p>
+              <p class="eyebrow" data-i18n="cs.t1">Aplicativo Android · Educação</p>
               <h1>ConnectStudents</h1>
               <ul class="tags">
                 <li>Kotlin</li>
@@ -60,26 +60,25 @@
               </ul>
             </div>
             <div>
-              <p class="lead">
+              <p class="lead" data-i18n="cs.t2">
                 Comunicação entre estudantes, professores e a instituição de
                 ensino.
               </p>
               <div class="actions" style="margin-top: 1.5rem">
                 <a class="button" href="https://github.com/AnahiMamani/Projeto"
-                  >Explorar o código <span aria-hidden="true">↗</span></a
-                >
+                   data-i18n="case.code-btn">Explorar o código <span aria-hidden="true">↗</span></a>
               </div>
             </div>
           </div>
           <figure class="case-visual phone">
             <img
               src="../assets/projects/connectstudents-feed.png"
-              alt="Registro da interface do ConnectStudents preservado no repositório do projeto."
+              alt="Registro da interface do ConnectStudents preservado no repositório do projeto." data-i18n-alt="cs.cover-alt"
               width="1440"
               height="960"
               fetchpriority="high"
             />
-            <figcaption>
+            <figcaption data-i18n="cs.records-p">
               Screenshot preservado na pasta “Prints tirados” do repositório.
               Registro histórico do aplicativo, sem nova execução Android.
             </figcaption>
@@ -87,46 +86,46 @@
         </div>
       </section>
       <div class="container section case-body">
-        <aside class="case-index" aria-label="Nesta página">
-          <p>Neste projeto</p>
-          <a href="#contexto">01 / O projeto</a
-          ><a href="#participacao">02 / Minha participação</a
-          ><a href="#stack">03 / Tecnologias</a
-          ><a href="#galeria">04 / Registros visuais</a
-          ><a href="#codigo">05 / Código-fonte</a>
+        <aside class="case-index" aria-label="Nesta página" data-i18n-aria="case.index-aria">
+          <p data-i18n="case.index-title">Neste projeto</p>
+          <a href="#contexto" data-i18n="case.idx-project">01 / O projeto</a
+          ><a href="#participacao" data-i18n="case.idx-role">02 / Minha participação</a
+          ><a href="#stack" data-i18n="case.idx-stack">03 / Tecnologias</a
+          ><a href="#galeria" data-i18n="case.idx-gallery">04 / Registros visuais</a
+          ><a href="#codigo" data-i18n="case.idx-code">05 / Código-fonte</a>
         </aside>
         <div class="case-copy">
           <section id="contexto">
-            <h2>O projeto</h2>
-            <p>
+            <h2 data-i18n="case.the-project">O projeto</h2>
+            <p data-i18n="cs.t3">
               O ConnectStudents foi planejado para melhorar a comunicação entre
               alunos, professores e a administração escolar. Publicações,
               notificações e compartilhamento de informações compõem a proposta
               do aplicativo.
             </p>
-            <h3>Proposta e estrutura</h3>
-            <p>
+            <h3 data-i18n="case.structure">Proposta e estrutura</h3>
+            <p data-i18n="cs.t4">
               O projeto combina desenvolvimento Android em Kotlin, Firebase e
               documentação UML, incluindo diagramas de casos de uso, atividades,
               classes e sequência.
             </p>
           </section>
           <section id="participacao">
-            <h2>Minha participação</h2>
-            <p>
+            <h2 data-i18n="case.my-role">Minha participação</h2>
+            <p data-i18n="cs.t5">
               Participei do planejamento e do desenvolvimento do aplicativo,
               conforme o registro no meu portfólio anterior.
             </p>
             <div class="note">
-              <p>
+              <p data-i18n="cs.t6">
                 Falta discriminar as telas, funcionalidades e tecnologias que
                 ficaram sob minha responsabilidade.
               </p>
             </div>
           </section>
           <section id="stack">
-            <h2>Tecnologias do projeto</h2>
-            <p>
+            <h2 data-i18n="case.stack2">Tecnologias do projeto</h2>
+            <p data-i18n="case.stack2-p">
               Ferramentas identificadas no código e na documentação do
               repositório.
             </p>
@@ -138,8 +137,8 @@
             </ul>
           </section>
           <section id="galeria">
-            <h2>Registros visuais</h2>
-            <p>
+            <h2 data-i18n="case.records">Registros visuais</h2>
+            <p data-i18n="cs.records-p">
               Screenshot preservado na pasta “Prints tirados” do repositório.
               Registro histórico do aplicativo, sem nova execução Android.
             </p>
@@ -147,43 +146,40 @@
               <figure>
                 <a
                   href="../assets/projects/connectstudents-feed.png"
-                  aria-label="Abrir imagem: Registro da versão do aplicativo"
+                  aria-label="Abrir imagem: Registro da versão do aplicativo" data-i18n-aria="cs.open1"
                   ><img
                     src="../assets/projects/connectstudents-feed.png"
-                    alt="Registro da versão do aplicativo — ConnectStudents"
+                    alt="Registro da versão do aplicativo — ConnectStudents" data-i18n-alt="cs.alt1"
                     loading="lazy"
                 /></a>
-                <figcaption>
+                <figcaption data-i18n="cs.t7">
                   Registro da versão do aplicativo. Abra a imagem para ampliar.
                 </figcaption>
               </figure>
               <figure>
                 <a
                   href="../assets/projects/connectstudents-publicar.png"
-                  aria-label="Abrir imagem: Interface de publicação"
+                  aria-label="Abrir imagem: Interface de publicação" data-i18n-aria="cs.open2"
                   ><img
                     src="../assets/projects/connectstudents-publicar.png"
-                    alt="Interface de publicação — ConnectStudents"
+                    alt="Interface de publicação — ConnectStudents" data-i18n-alt="cs.alt2"
                     loading="lazy"
                 /></a>
-                <figcaption>
+                <figcaption data-i18n="cs.t8">
                   Interface de publicação. Abra a imagem para ampliar.
                 </figcaption>
               </figure>
             </div>
           </section>
           <section id="codigo">
-            <h2>Explore o código</h2>
-            <p>Estrutura, arquivos e documentação do projeto no GitHub.</p>
+            <h2 data-i18n="case.explore-code">Explore o código</h2>
+            <p data-i18n="case.repo-p">Estrutura, arquivos e documentação do projeto no GitHub.</p>
             <a class="text-link" href="https://github.com/AnahiMamani/Projeto"
-              >Projeto ↗</a
-            >
+               data-i18n="case.repo">Projeto ↗</a>
           </section>
           <div class="next-project">
-            <p>Continue explorando</p>
-            <a href="rosycoffee.html"
-              >Rosycoffee <span class="arrow" aria-hidden="true">→</span></a
-            >
+            <p data-i18n="case.next">Continue explorando</p>
+            <a href="rosycoffee.html">Rosycoffee <span class="arrow" aria-hidden="true">→</span></a>
           </div>
         </div>
       </div>
@@ -192,9 +188,9 @@
       <div class="container">
         <div class="footer-top">
           <div>
-            <p class="eyebrow">Contato</p>
-            <h2>Vamos trocar ideias?</h2>
-            <p>
+            <p class="eyebrow" data-i18n="footer.eyebrow">Contato</p>
+            <h2 data-i18n="footer.title">Vamos trocar ideias?</h2>
+            <p data-i18n="footer.p">
               Sobre dados, desenvolvimento de software e os caminhos entre essas
               duas áreas.
             </p>
@@ -213,8 +209,7 @@
         <div class="footer-bottom">
           <span>© 2026 Anahi Narieli Guarachi Mamani</span
           ><a href="https://github.com/AnahiMamani/Portifolio"
-            >Código deste portfólio ↗</a
-          ><a href="#conteudo">Voltar ao início ↑</a>
+             data-i18n="footer.code">Código deste portfólio ↗</a><a href="#conteudo" data-i18n="footer.top">Voltar ao início ↑</a>
         </div>
       </div>
     </footer>
