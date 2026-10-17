@@ -28,7 +28,7 @@ A existência de uma tecnologia no projeto não comprova uso individual pela aut
 
 HTML/CSS/JavaScript atende ao escopo sem build. Páginas HTML reais evitam dependência de roteamento de SPA no GitHub Pages. A home mantém conteúdo legível sem JavaScript, com filtros e menu como melhoria progressiva.
 
-A fonte Arsenica foi reutilizada do portfólio original, sem substituição ou aquisição de nova licença. Retrato e fonte mantêm os direitos e condições originais. O favicon em SVG e os ornamentos em CSS/texto foram criados para esta revisão.
+A fonte display foi substituída por Fraunces (licença OFL, repositório google/fonts), pois a Arsenica Trial do portfólio original renderizava caracteres acentuados incorretamente. O retrato mantém os direitos e condições originais. O favicon em SVG e os ornamentos em CSS/texto foram criados para esta revisão.
 
 As screenshots de Pindorama, Seren, Rosycoffee e PetCare são capturas das interfaces reais locais; não foram redesenhadas. A composição do pipeline é HTML/CSS e está rotulada como esquema editorial, não como screenshot.
 

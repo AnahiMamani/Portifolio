@@ -1,7 +1,8 @@
 @font-face {
-  font-family: Arsenica;
-  src: url("../assets/fonts/ArsenicaTrial-Medium.ttf") format("truetype");
-  font-weight: 500;
+  font-family: Fraunces;
+  src: url("../assets/fonts/Fraunces-Variable.ttf")
+    format("truetype-variations");
+  font-weight: 100 900;
   font-display: swap;
 }
 :root {
@@ -14,7 +15,7 @@
   --color-black: #22271f;
   --color-muted: #596052;
   --color-line: #cfcbbb;
-  --font-display: Arsenica, Georgia, serif;
+  --font-display: Fraunces, Georgia, serif;
   --font-body: Arial, Helvetica, sans-serif;
   --space-section: clamp(4rem, 8vw, 7rem);
   --container: 1200px;
